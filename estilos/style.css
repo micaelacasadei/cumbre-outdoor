@@ -1,0 +1,283 @@
+/*colores: #FFF7D4
+#FFD95A
+#C07F00
+#4C3D3D
+
+header{
+    background-color: #F4BA43
+
+.destacados a{
+    color: #fad532;
+
+.musica{
+    background-color: #F4BA43;
+
+font-family: 'Inter', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Rock Salt', cursive;
+
+*/
+
+
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+/*@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&family=Rock+Salt&display=swap');
+
+
+
+/*--------------------html general------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%; /* modifica 1 rem de 16px a 10px*/
+    font-family: 'Inter', sans-serif;
+    
+}
+
+html h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+html h2{
+    font-size: 3rem;
+}
+
+html p{
+    font-size: 1.3rem;
+}
+
+/* header*/
+
+header{
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    
+
+}
+
+header img{
+    width: 200px;
+    margin: 30px;
+}
+
+nav{ 
+    width: 50%;
+}
+
+header ul{
+    list-style-type: none;
+    display: flex;
+    right: 0;
+    justify-content: space-around;
+    
+    
+}
+
+header ul a{
+    color: #141414;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight:600;
+    
+}
+
+/*footer*/
+
+footer{
+    background-color: #F4BA43;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-self:center;
+    
+}
+
+footer img{
+    width: 35px;
+    
+}
+
+/*-------------------- index-----------------------------*/
+
+/*banner*/
+
+.banner{
+
+    background-image: url(../medios/minitrekBanner.jpg);
+    height: 350px;
+    background-size:cover;
+    background-position-y:center ;
+    color: #055009;
+
+    font-family: 'Rock Salt', cursive;
+     
+    font-size: 3rem;
+    
+    text-align: center;
+    
+}
+
+
+/*destacados*/
+
+
+.destacados{
+    text-align: center;
+    background-color:#fddfdfd;
+       
+
+}
+
+.destacados h2{
+    color:#141414 ;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+
+
+.destacados a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #141414;
+    padding-top: 15px;
+    padding-bottom: 30px;
+
+}
+
+.destacados img{
+    width: 300px;
+}
+
+.filaDestacados{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.productoDestacado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/*musica*/
+
+.musica{
+    background-color: #464543;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.musica h2{
+    color: antiquewhite;
+    padding-bottom: 15px;
+}
+/*recomendaciones*/
+
+.recomendaciones{
+    background-color: #e4d280;
+    text-align: center;
+    font-size: 2rem;
+   
+}
+
+.recomendaciones a{
+    text-decoration: none;
+    color: #000;
+
+}
+
+.recomendaciones img{
+    width: 500px;
+}
+
+/*-------------------- catalogo-----------------------------*/
+
+.categorias{
+    background-color: #fff0ab;
+}
+
+.categorias ul{
+    list-style: none;
+}
+
+.categorias ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.productos img{
+    width: 20%;
+}
+
+.productos p{
+font-size: 1.5rem;
+}
+
+.productos{
+    display: grid;
+    grid-template-rows: (2, 300px);
+    grid-template-columns: (3, 300px);
+}
+
+/*------------------comunidad---------------------*/
+
+
+.tipsYrecomendaciones h1{
+font-size: 3rem;
+font-weight: 600;
+}
+
+.tipsYrecomendaciones h2{
+    font-size: 2rem;
+}
+
+.tipsYrecomendaciones p{
+    font-size: 1.5rem;
+}
+
+.tipsYrecomendaciones img{
+    width: 40%;
+}
+
+
+
+
+/*------------------------------------contacto--------------------------------*/
+
+
+
+
+/*--------------------nosotros-----------------------------------------*/
+
+.nosotrosClass img{
+    width: 100%;
+}
+
