@@ -57,14 +57,8 @@ html h2{
 }
 
 html p{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
-
-/* header
-
- justify-content: space-between;
-    align-items: center;
-    position: sticky;*/
 
 
 
@@ -75,34 +69,29 @@ header{
 
 }
 
+
+
 header img{
     width: 200px;
     margin: 30px;
 }
 
-.navbar-expand-lg .navbar-collapse {
+.navbar-nav{
+width: 50%;
+justify-content: flex-end;
+}
+
+.navbar-collapse {
+    height: 80px;
     display: flex;
+    align-content: space-between;
     justify-content: flex-end;
     }
 
-
-/*
-nav{ 
-    width: 100%;
+.navbar-expand-lg .navbar-collapse li{
+    padding: 10px;
 }
-
-header{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-       
-    
-}
-*/
-
+ 
 
 .menu{
     color: #141414;
@@ -112,26 +101,32 @@ header{
 
 }
 
-/*
-
-header ul a{
-    color: #141414;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight:600;
-    
-}
 
 /*footer*/
 
 footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: 
+    "redes nombre";
+
     background-color: #F4BA43;
     color: black;
+    width: 100%;
+    height: 60px;
     font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
-    align-self:center;
+    align-items:center;
     
+    
+}
+
+.redes{
+    grid-area: redes;
+}
+.nombre{
+    grid-area: nombre;
 }
 
 footer img{
@@ -146,17 +141,22 @@ footer img{
 .banner{
 
     background-image: url(../medios/minitrekBanner.jpg);
-    height: 350px;
+    
+    width: 100%;
     background-size:cover;
     background-position-y:center ;
     color: #055009;
 
     font-family: 'Rock Salt', cursive;
      
-    font-size: 3rem;
+    
     
     text-align: center;
     
+}
+
+.carousel-inner h1{
+    font-size: 7rem;
 }
 
 
@@ -165,7 +165,7 @@ footer img{
 
 .destacados{
     text-align: center;
-    background-color:#fddfdfd;
+    background-color:rgb(253, 248, 248);
        
 
 }
@@ -196,6 +196,8 @@ footer img{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-content: flex-end;
+    
 }
 
 .productoDestacado{
@@ -221,6 +223,45 @@ footer img{
     padding-bottom: 15px;
 }
 /*recomendaciones*/
+
+.titulo-recomendaciones{
+    text-align: center;
+    padding: 10px;
+}
+
+.cards-recomendaciones{
+    display: grid;
+    grid-template-areas: 
+    "card-reco1  card-reco2  card-reco3";
+    grid-template-columns: repeat(3,25%);
+    justify-content: space-around;
+    
+    padding: 30px;
+}
+
+.card-reco1{
+    grid-area: card-reco1;
+}
+.card-reco2{
+    grid-area: card-reco2;
+}
+.card-reco3{
+    grid-area: card-reco3;
+}
+
+.card-body{
+    width: 25rem;
+}
+
+.cards-recomendaciones img{
+    width: 300px;
+}
+
+.btn-primary {
+    --bs-btn-color: black;
+    --bs-btn-bg:none;
+}
+
 
 .recomendaciones{
     background-color: #e4d280;
@@ -303,11 +344,19 @@ footer img{
 }
 /*-- catalogo fotos hombre-------------------------------*/
 
+.banner-catalogo-hombre{
+    background-image: url(../medios/carousel-2\ 1.jpg);
+    height: 350px;
+    background-size:cover;
+    background-position-y:center ;
+    
+}
+
 .list-group{
     display: flex;
     flex-direction: column;
     position: sticky;
-    top: 150px;
+    top: 120px;
     justify-content: space-evenly;
     align-content: flex-start;
     
@@ -382,7 +431,155 @@ font-weight: 600;
 
 /*--------------------nosotros-----------------------------------------*/
 
-.nosotrosClass img{
+.banner-nosotros{
+    width: 100%;
+}
+.nosotros-class img{
     width: 100%;
 }
 
+.nosotros-container{
+
+    display: grid;
+    grid-template-areas: 
+    "titulo-nos titulo-nos titulo-nos   titulo-nos"
+    "foto1       foto1      texto1       texto1"
+    "texto2      foto2      texto3       foto3"
+    ;
+    
+    grid-template-columns: repeat(4,20%);
+    grid-template-rows: 100px 280px 300px;
+    justify-content: center;
+    justify-items: center;
+    gap: 15px;
+
+}
+
+.texto1 p{
+    font-size: 1.5rem;
+}
+
+.titulo-nos{
+    grid-area: titulo-nos;
+    justify-content: center;
+    align-self: center;
+}
+
+.foto1{
+    grid-area: foto1;
+}
+
+.texto1{
+    grid-area: texto1;
+    justify-content: center;
+}
+
+.texto2 p {
+    grid-area: texto2;
+    
+}
+
+.foto2{
+    grid-area: foto2;
+}
+
+.foto3{
+    grid-area: foto3;
+}
+
+.texto3 p{
+    grid-area: texto3;
+   
+}
+
+
+
+
+/* --------responsibe mobile------------------*/
+
+@media only screen and (max-width: 500px) {
+
+    /*-----------footer--------------------------*/
+    
+
+    
+    /* ------------- index--------------------*/
+
+    .carousel-inner h1{
+        font-size: 3rem;
+    }
+    /*----destacados-----------*/
+
+    .filaDestacados{
+        flex-direction: column;
+        align-content: space-around;
+        justify-content: center;
+    
+    }
+
+    /*------musica----*/
+    .musica h2{
+        font-size: 2rem;
+    }
+
+    /*-----rcomendaciones -----*/
+
+    .cards-recomendaciones{
+        grid-template-areas: 
+        "card-reco1"
+        "card-reco2"
+        "card-reco3";
+        justify-content: center;
+        row-gap: 15px;
+        grid-template-columns: 85%;
+    }
+
+    .recomendaciones h2{
+        font-size: 2rem;
+    }
+    /*nosotros*/
+
+    .banner-nosotros{
+        display: none;
+    }
+
+   
+    .nosotros-container{
+
+        grid-template-areas: 
+        "titulo-nos"
+        "foto1"
+        "texto1"
+        "texto2"
+        "texto3"
+        "foto3";
+
+        grid-template-columns: 85%;
+        grid-template-rows: 60px 170px 260px 130px 150px 330px;
+    }
+
+    .titulo-nos{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .texto1 p{
+        font-size: 1.2rem;
+    }
+    .foto2{
+        display: none;
+    }
+    .texto2 p{
+        font-size:1.2rem;
+    }
+
+    .texto3 p{
+        font-size:1.2rem;
+    }
+
+
+
+
+
+
+}

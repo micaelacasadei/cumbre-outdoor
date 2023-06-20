@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
+    
     <!-- Titulo de la pagina-->
     <title>Cumbre Outdoor</title>
 
@@ -31,7 +32,8 @@
 
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"> <img src="medios/Cumbre Outdoor.png" alt="Cumbre-Outdoor" width="30" height="24"></a>
+              <a class="navbar-brand" href="#"> 
+              <img src="medios/Cumbre Outdoor.png" alt="Cumbre-Outdoor" width="200px" height=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -49,7 +51,7 @@
                         </a>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item menu" href="page/Catalogo-mujer.html">Mujer</a></li>
-                          <li><a class="dropdown-item menu" href="#">Hombre</a></li>
+                          <li><a class="dropdown-item menu" href="page/catalogo-hombre.html">Hombre</a></li>
                           <li><a class="dropdown-item menu" href="#">Niño</a></li>
                         </ul>
                       </li>
@@ -166,42 +168,47 @@
 
         </section>
 
-        <!--TIPS Y RECOMENDACIONES-->
+        <!--------  TIPS Y RECOMENDACIONES BOOTSTRAP----------------->
 
-        <section class="recomendaciones">
-            <h2>Tips y recomendaciones</h2>
+        <h2 class="titulo-recomendaciones"> Recomendaciones</h2>
 
-            <div>
-                <h3>Armá tu mochila</h3>
-                <img src="medios/prepararMochila.jpg" alt="Mochila de viaje">
-                <a href="page/comunidad.html">Ver mas </a>
+        <div class="cards-recomendaciones">
+            <div class="card card-reco1" style="width: 18rem;">
+                <img src="medios/atarBotas.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
 
+              <div class="card card-reco2" style="width: 18rem;">
+                <img src="medios/atarBotas.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
 
-            </div>
+              <div class="card card-reco3" style="width: 18rem;">
+                <img src="medios/atarBotas.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
 
-            <div>
-                <h3>Vestimenta en capas para el frio</h3>
-                <img src="medios/vestimentaCapas.jpg" alt="vestimenta en capas">
-                <a href="page/comunidad.html">Ver mas</a>
-
-            </div>
-
-            <div>
-                <h3>Aprendé a atar tus botas de montaña</h3>
-                <img src="medios/atarBotas.jpg" alt="Botas de montaña">
-                <a href="page/comunidad.html">Ver mas</a>
-
-            </div>
-
-
-        </section>
+        </div>
+        
 
 
     </main>
 
     <footer>
 
-        <div>
+        <div class="redes">
 
             <a href=""><img src="medios/spotify.png" alt="Spotify"></a>
             <a href=""><img src="medios/facebook.png" alt="Facebook"></a>
@@ -209,7 +216,7 @@
 
         </div>
              
-        <p>Micaela Casadei 2023</p>
+        <p class="nombre">Micaela Casadei 2023</p>
 
     </footer>
 
