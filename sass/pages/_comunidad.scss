@@ -1,0 +1,87 @@
+// .tipsYrecomendaciones {
+//     h1 {
+//         font-size: 3rem;
+//         font-weight: 600;
+//     }
+
+//     h2 {
+//         font-size: 2rem;
+//     }
+
+//     p {
+//         font-size: 1.5rem;
+//     }
+
+//     img{
+//         width: 40%;
+//     }
+// }
+
+.titulo-comunidad{
+
+    h2{
+        margin: 20px;
+    }
+    
+}
+
+.recomendaciones-comunidad {
+
+   display: grid;
+   grid-template-columns: repeat(3, 35%);
+   grid-template-areas: 
+   "recomendacion-1  recomendacion-2  recomendacion-3";
+
+   justify-content: space-around;
+   justify-items: center;
+   margin: 30px;
+
+    .recomendacion-1 {
+        grid-area: recomendacion-1;
+        background-color: white;
+
+        width: 300px;
+        
+        img{
+            width: 300px;
+        }
+
+
+    }
+
+    .recomendacion-2 {
+        grid-area: recomendacion-2;
+        width: 300px;
+        background-color: white;
+        img{
+            width: 300px;
+        }
+    }
+
+    .recomendacion-3 {
+        grid-area: recomendacion-3;
+        width: 300px;
+        background-color: white;
+        img{
+            width: 300px;
+        }
+    }
+}
+
+.rutas{
+    display: flex;
+    justify-content: center;
+    
+    .mapa{
+
+        margin: 50px;
+    }
+    .texto-mapa{
+        margin: 50px;
+
+        h2{
+            margin-bottom: 30px;
+        }
+    }
+
+}

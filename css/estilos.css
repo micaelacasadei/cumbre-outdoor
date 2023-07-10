@@ -1,0 +1,355 @@
+/*carousel*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&family=Rock+Salt&display=swap");
+.carousel-inner h1 {
+  font-size: 7rem;
+}
+
+/*destacados*/
+.destacados {
+  text-align: center;
+  background-color: rgb(253, 248, 248);
+}
+.destacados h2 {
+  color: #141414;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.destacados .filaDestacados {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: flex-end;
+}
+.destacados .filaDestacados .productoDestacado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.destacados .filaDestacados .productoDestacado img {
+  width: 120%;
+}
+.destacados .filaDestacados .productoDestacado a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #141414;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+/*musica*/
+.musica {
+  background-color: #464543;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.musica h2 {
+  color: antiquewhite;
+  padding-bottom: 15px;
+}
+
+/*recomendaciones*/
+.recomendaciones-titulo {
+  margin: 50px;
+  text-align: center;
+}
+
+.recomendaciones-index {
+  display: grid;
+  grid-template-columns: repeat(3, 35%);
+  grid-template-areas: "recomendacion-1  recomendacion-2  recomendacion-3";
+  justify-content: space-around;
+  justify-items: center;
+  margin: 30px;
+}
+.recomendaciones-index .recomendacion-1, .recomendaciones-index .recomendacion-3, .recomendaciones-index .recomendacion-2 {
+  grid-area: recomendacion-1;
+  background-color: white;
+  width: 300px;
+  text-align: center;
+}
+.recomendaciones-index .recomendacion-1 h5, .recomendaciones-index .recomendacion-3 h5, .recomendaciones-index .recomendacion-2 h5 {
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.recomendaciones-index .recomendacion-1 a, .recomendaciones-index .recomendacion-3 a, .recomendaciones-index .recomendacion-2 a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #575555;
+}
+.recomendaciones-index .recomendacion-1 img, .recomendaciones-index .recomendacion-3 img, .recomendaciones-index .recomendacion-2 img {
+  width: 300px;
+}
+.recomendaciones-index .recomendacion-2 {
+  grid-area: recomendacion-2;
+}
+.recomendaciones-index .recomendacion-3 {
+  grid-area: recomendacion-3;
+}
+
+.banner-nosotros {
+  width: 100%;
+}
+
+.nosotros-container {
+  display: grid;
+  grid-template-areas: "titulo-nos titulo-nos titulo-nos   titulo-nos" "foto1       foto1      texto1       texto1" "texto2      foto2      texto3       foto3";
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: 100px 280px 300px;
+  justify-content: space-around;
+  justify-items: center;
+  margin: 40px;
+  gap: 15px;
+}
+.nosotros-container .titulo-nos {
+  grid-area: titulo-nos;
+  justify-content: center;
+  align-self: center;
+}
+.nosotros-container .foto1 {
+  grid-area: foto1;
+}
+.nosotros-container .foto1 img {
+  width: 100%;
+}
+.nosotros-container .texto1 {
+  grid-area: texto1;
+  justify-content: center;
+}
+.nosotros-container .texto1 p {
+  font-size: 1.5rem;
+}
+.nosotros-container .texto2 {
+  grid-area: texto2;
+  justify-content: center;
+}
+.nosotros-container .texto2 p {
+  grid-area: texto2;
+}
+.nosotros-container .foto2 {
+  grid-area: foto2;
+}
+.nosotros-container .foto2 img {
+  width: 105%;
+}
+.nosotros-container .foto3 {
+  grid-area: foto3;
+}
+.nosotros-container .foto3 img {
+  width: 100%;
+}
+.nosotros-container .texto3 {
+  grid-area: texto3;
+  justify-content: center;
+}
+.nosotros-container .texto3 p {
+  grid-area: texto3;
+}
+
+.banner-catalogo {
+  background-image: url(../medios/carousel1\ 1.jpg);
+  height: 350px;
+  background-size: cover;
+  background-position-y: center;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.list-group {
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 30px 30px;
+  justify-content: flex-start;
+  position: sticky;
+  top: 120px;
+  align-content: space-around;
+  width: 280px;
+  /*color de fondo de filtro hover*/
+  --bs-list-group-active-bg:none;
+  --bs-list-group-active-border-color: none;
+}
+.list-group .list-group-item {
+  border: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #141414;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.row h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+.row h4 {
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.row .card {
+  width: 75%;
+  border: none;
+}
+.row .card .card-title {
+  font-size: 1.8rem;
+}
+.row .card .card-text {
+  font-size: 1.2rem;
+}
+
+.titulo-comunidad h2 {
+  margin: 20px;
+}
+
+.recomendaciones-comunidad {
+  display: grid;
+  grid-template-columns: repeat(3, 35%);
+  grid-template-areas: "recomendacion-1  recomendacion-2  recomendacion-3";
+  justify-content: space-around;
+  justify-items: center;
+  margin: 30px;
+}
+.recomendaciones-comunidad .recomendacion-1, .recomendaciones-comunidad .recomendaciones-index .recomendacion-2, .recomendaciones-index .recomendaciones-comunidad .recomendacion-2, .recomendaciones-comunidad .recomendaciones-index .recomendacion-3, .recomendaciones-index .recomendaciones-comunidad .recomendacion-3 {
+  grid-area: recomendacion-1;
+  background-color: white;
+  width: 300px;
+}
+.recomendaciones-comunidad .recomendacion-1 img, .recomendaciones-comunidad .recomendaciones-index .recomendacion-2 img, .recomendaciones-index .recomendaciones-comunidad .recomendacion-2 img, .recomendaciones-comunidad .recomendaciones-index .recomendacion-3 img, .recomendaciones-index .recomendaciones-comunidad .recomendacion-3 img {
+  width: 300px;
+}
+.recomendaciones-comunidad .recomendacion-2 {
+  grid-area: recomendacion-2;
+  width: 300px;
+  background-color: white;
+}
+.recomendaciones-comunidad .recomendacion-2 img {
+  width: 300px;
+}
+.recomendaciones-comunidad .recomendacion-3 {
+  grid-area: recomendacion-3;
+  width: 300px;
+  background-color: white;
+}
+.recomendaciones-comunidad .recomendacion-3 img {
+  width: 300px;
+}
+
+.rutas {
+  display: flex;
+  justify-content: center;
+}
+.rutas .mapa {
+  margin: 50px;
+}
+.rutas .texto-mapa {
+  margin: 50px;
+}
+.rutas .texto-mapa h2 {
+  margin-bottom: 30px;
+}
+
+.formulario {
+  width: 50%;
+  margin: 50px;
+}
+
+.encontranos {
+  display: flex;
+  justify-content: flex-start;
+}
+.encontranos .mapa-locales {
+  margin: 50px;
+}
+.encontranos .direcciones {
+  margin: 50px;
+}
+
+header {
+  /*z-index: 10;*/
+  background-color: #fdfdfd;
+  position: sticky;
+  top: 0px;
+}
+header img {
+  width: 200px;
+  margin: 30px;
+}
+header .navbar-nav {
+  width: 50%;
+  justify-content: flex-end;
+}
+header .navbar-collapse {
+  height: 80px;
+  display: flex;
+  align-content: space-between;
+  justify-content: flex-end;
+}
+header .navbar-collapse li {
+  padding: 10px;
+}
+header .navbar-collapse li .menu {
+  color: #141414;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/*footer*/
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-area: "redes nombre";
+  background-color: #F4BA43;
+  color: black;
+  width: 100%;
+  height: 60px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .redes {
+  grid-area: redes;
+}
+footer .redes img {
+  width: 35px;
+}
+footer .nombre {
+  grid-area: nombre;
+}
+
+/* siempre el import de las media querys es el ultimo*/
+/*font*/
+/*@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&display=swap');*/
+/*--------------------html general------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  FONT-VARIANT: JIS83;
+  font-size: 62.5%; /* modifica 1 rem de 16px a 10px*/
+  font-family: "Inter", sans-serif;
+}
+html h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+html h2 {
+  font-size: 3rem;
+}
+html p {
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=estilos.css.map */

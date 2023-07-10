@@ -22,123 +22,12 @@ font-family: 'Rock Salt', cursive;
 */
 
 
-/*font*/
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
-
-/*@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&display=swap');*/
-
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&family=Rock+Salt&display=swap');
-
-
-
-/*--------------------html general------------------------------*/
-
-*{
-    FONT-VARIANT: JIS83;
-    margin: 0;
-    padding: 0;
-}
-
-html{
-    font-size: 62.5%; /* modifica 1 rem de 16px a 10px*/
-    font-family: 'Inter', sans-serif;
-    
-}
-
-html h1{
-    font-size: 3.5rem;
-    font-weight: 600;
-}
-
-html h2{
-    font-size: 3rem;
-}
-
-html p{
-    font-size: 1.5rem;
-}
-
-
-
-header{
-    background-color: #fdfdfd;
-    position: sticky;
-    top: 0px;
-
-}
-
-
-
-header img{
-    width: 200px;
-    margin: 30px;
-}
-
-.navbar-nav{
-width: 50%;
-justify-content: flex-end;
-}
-
-.navbar-collapse {
-    height: 80px;
-    display: flex;
-    align-content: space-between;
-    justify-content: flex-end;
-    }
-
-.navbar-expand-lg .navbar-collapse li{
-    padding: 10px;
-}
- 
-
-.menu{
-    color: #141414;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight:600;
-
-}
-
-
-/*footer*/
-
-footer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-area: 
-    "redes nombre";
-
-    background-color: #F4BA43;
-    color: black;
-    width: 100%;
-    height: 60px;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    
-    
-}
-
-.redes{
-    grid-area: redes;
-}
-.nombre{
-    grid-area: nombre;
-}
-
-footer img{
-    width: 35px;
-    
-}
 
 /*-------------------- index-----------------------------*/
 
 /*banner*/
 
-.banner{
+/* .banner{
 
     background-image: url(../medios/minitrekBanner.jpg);
     
@@ -153,195 +42,33 @@ footer img{
     
     text-align: center;
     
-}
-
-.carousel-inner h1{
-    font-size: 7rem;
-}
-
-
-/*destacados*/
-
-
-.destacados{
-    text-align: center;
-    background-color:rgb(253, 248, 248);
-       
-
-}
-
-.destacados h2{
-    color:#141414 ;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-}
+} */
 
 
 
-.destacados a{
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #141414;
-    padding-top: 15px;
-    padding-bottom: 30px;
-
-}
-
-.destacados img{
-    width: 300px;
-}
-
-.filaDestacados{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: flex-end;
-    
-}
-
-.productoDestacado{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-/*musica*/
-
-.musica{
-    background-color: #464543;
-    text-align: center;
-    font-size: 2rem;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-}
-
-.musica h2{
-    color: antiquewhite;
-    padding-bottom: 15px;
-}
 /*recomendaciones*/
 
-.titulo-recomendaciones{
-    text-align: center;
-    padding: 10px;
-}
 
-.cards-recomendaciones{
-    display: grid;
-    grid-template-areas: 
-    "card-reco1  card-reco2  card-reco3";
-    grid-template-columns: repeat(3,25%);
-    justify-content: space-around;
-    
-    padding: 30px;
-}
-
-.card-reco1{
-    grid-area: card-reco1;
-}
-.card-reco2{
-    grid-area: card-reco2;
-}
-.card-reco3{
-    grid-area: card-reco3;
-}
-
-.card-body{
-    width: 25rem;
-}
-
-.cards-recomendaciones img{
-    width: 300px;
-}
-
-.btn-primary {
-    --bs-btn-color: black;
-    --bs-btn-bg:none;
-}
-
-
-.recomendaciones{
-    background-color: #e4d280;
-    text-align: center;
-    font-size: 2rem;
-   
-}
-
-.recomendaciones a{
-    text-decoration: none;
-    color: #000;
-
-}
-
-.recomendaciones img{
-    width: 500px;
-}
 
 /*---------------------catalogo fotos dama ---------*/
 
-.banner-catalogo{
-    
-    background-image: url(../medios/carousel1\ 1.jpg);
-    height: 350px;
-    background-size:cover;
-    background-position-y:center ;
-    
-}
-
-.banner-catalogo {
-    margin-bottom: 30px;
-}
 
 
 
-.filtro-catalogo{
-
-    display: grid;
-    grid-template-columns: 25% 75%;
-    
-    
-}
-.filtro{
-    grid-column: 1/2;
-    display: flex;
-    flex-direction: column;
-    padding: 0 0 80px 30px;
-    justify-content: flex-start;
-    position: fixed;
-    height: 200px;
-    align-content: space-around;
-}
 
 
-.filtro ul{
-    list-style: none;
-    margin-bottom: 30px;
-}
 
-.filtro ul li a{
-    color: #141414;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight:600;
-    
-    
-    
-}
 
-.catalogo-fotos-mujer{
+
+
+
+
+/* .catalogo-fotos-mujer{
     grid-column: 2/3;
 }
 
 
-.card{
-
-   width: 75%;
-   border: none;
-
-}
+ */
 /*-- catalogo fotos hombre-------------------------------*/
 
 .banner-catalogo-hombre{
@@ -352,26 +79,13 @@ footer img{
     
 }
 
-.list-group{
-    display: flex;
-    flex-direction: column;
-    position: sticky;
-    top: 120px;
-    justify-content: space-evenly;
-    align-content: flex-start;
-    
-}
 
-.list-group a{
-
-    margin: 10px;
-}
 
 
 
 
 /*-------------------- catalogo-----------------------------*/
-
+/* 
 .categorias{
     background-color: #fff0ab;
 }
@@ -399,27 +113,11 @@ font-size: 1.5rem;
     display: grid;
     grid-template-rows: (2, 300px);
     grid-template-columns: (3, 300px);
-}
+} */
 
 /*------------------comunidad---------------------*/
 
 
-.tipsYrecomendaciones h1{
-font-size: 3rem;
-font-weight: 600;
-}
-
-.tipsYrecomendaciones h2{
-    font-size: 2rem;
-}
-
-.tipsYrecomendaciones p{
-    font-size: 1.5rem;
-}
-
-.tipsYrecomendaciones img{
-    width: 40%;
-}
 
 
 
@@ -431,66 +129,11 @@ font-weight: 600;
 
 /*--------------------nosotros-----------------------------------------*/
 
-.banner-nosotros{
-    width: 100%;
-}
+/* 
 .nosotros-class img{
     width: 100%;
-}
+} */
 
-.nosotros-container{
-
-    display: grid;
-    grid-template-areas: 
-    "titulo-nos titulo-nos titulo-nos   titulo-nos"
-    "foto1       foto1      texto1       texto1"
-    "texto2      foto2      texto3       foto3"
-    ;
-    
-    grid-template-columns: repeat(4,20%);
-    grid-template-rows: 100px 280px 300px;
-    justify-content: center;
-    justify-items: center;
-    gap: 15px;
-
-}
-
-.texto1 p{
-    font-size: 1.5rem;
-}
-
-.titulo-nos{
-    grid-area: titulo-nos;
-    justify-content: center;
-    align-self: center;
-}
-
-.foto1{
-    grid-area: foto1;
-}
-
-.texto1{
-    grid-area: texto1;
-    justify-content: center;
-}
-
-.texto2 p {
-    grid-area: texto2;
-    
-}
-
-.foto2{
-    grid-area: foto2;
-}
-
-.foto3{
-    grid-area: foto3;
-}
-
-.texto3 p{
-    grid-area: texto3;
-   
-}
 
 
 

@@ -1,0 +1,181 @@
+/*carousel*/
+
+.carousel-inner {
+    h1 {
+        font-size: 7rem;
+    }
+}
+
+/*destacados*/
+
+
+.destacados {
+    text-align: center;
+    background-color: rgb(253, 248, 248);
+
+    h2 {
+        color: #141414;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+    }
+
+    .filaDestacados {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: flex-end;
+
+        .productoDestacado {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                width: 120%;
+            }
+
+            a {
+                font-size: 1.5rem;
+                text-decoration: none;
+                color: #141414;
+                padding-top: 15px;
+                padding-bottom: 30px;
+
+            }
+        }
+    }
+}
+
+/*musica*/
+
+.musica {
+    background-color: #464543;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    h2 {
+        color: antiquewhite;
+        padding-bottom: 15px;
+    }
+
+}
+
+/*recomendaciones*/
+
+// .recomendaciones {
+
+//     background-color: #e4d280;
+//     text-align: center;
+//     font-size: 2rem;
+
+//     h1 {
+//         text-align: center;
+//         padding: 10px;
+//     }
+
+//     .cards-recomendaciones {
+//         display: grid;
+//         grid-template-areas:
+//             "card-reco1  card-reco2  card-reco3";
+//         grid-template-columns: repeat(3, 40%);
+//         justify-content: space-around;
+
+//         padding: 30px;
+
+
+//         .card-reco1 {
+//             grid-area: card-reco1;
+
+//             img{
+//                 width: 300px;
+//             }
+
+//             .card-body {
+//                 width: 25rem;
+//                 a{
+//                     text-decoration: none;
+//                     color: #000;
+
+//                 }
+//                 .btn-primary {
+//                     --bs-btn-color: black;
+//                     --bs-btn-bg:none;
+//                 }
+//             }
+//         }
+
+//         .card-reco2 {
+//             @extend .card-reco1;
+//             grid-area: card-reco2;
+
+//         }
+
+//         .card-reco3 {
+//             @extend .card-reco1;
+//             grid-area: card-reco3;
+
+//         }
+
+//         img {
+//             width: 300px;
+//         }
+//     }
+// }
+
+.recomendaciones-titulo {
+    margin: 50px;
+    text-align: center;
+}
+
+.recomendaciones-index {
+
+    display: grid;
+    grid-template-columns: repeat(3, 35%);
+    grid-template-areas:
+        "recomendacion-1  recomendacion-2  recomendacion-3";
+
+    justify-content: space-around;
+    justify-items: center;
+    margin: 30px;
+
+    .recomendacion-1 {
+        grid-area: recomendacion-1;
+        background-color: white;
+        width: 300px;
+        text-align: center;
+        
+        h5{
+            font-size: 2rem;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        a{
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: #575555;
+            
+        }
+
+        img {
+            width: 300px;
+        }
+
+
+    }
+
+    .recomendacion-2 {
+        @extend .recomendacion-1;
+        grid-area: recomendacion-2;
+
+    }
+
+    .recomendacion-3 {
+        @extend .recomendacion-1;
+        grid-area: recomendacion-3;
+
+    }
+}

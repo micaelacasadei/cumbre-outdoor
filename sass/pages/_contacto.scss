@@ -1,0 +1,19 @@
+.formulario{
+
+    width: 50%;
+
+    margin: 50px;
+}
+
+.encontranos{
+
+    display: flex;
+    justify-content: flex-start;
+    .mapa-locales{
+        margin: 50px;
+    }
+    .direcciones{
+        margin: 50px; 
+    }
+
+}
