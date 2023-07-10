@@ -17,81 +17,86 @@
 //     }
 // }
 
-body{
+body {
     background-color: $cumbre-beige;
 }
 
-.titulo-comunidad{
+.titulo-comunidad {
 
-    h2{
-        margin: 20px;
+    h2 {
+        margin: 50px;
+
+
     }
-    
+
 }
 
 .recomendaciones-comunidad {
 
-   display: grid;
-   grid-template-columns: repeat(3, 35%);
-   grid-template-areas: 
-   "recomendacion-1  recomendacion-2  recomendacion-3";
+    display: grid;
+    grid-template-columns: repeat(3, 35%);
+    grid-template-areas:
+        "recomendacion-1  recomendacion-2  recomendacion-3";
 
-   justify-content: space-around;
-   justify-items: center;
-   margin: 30px;
+    justify-content: space-around;
+    justify-items: center;
+    margin: 30px;
 
     .recomendacion-1 {
         grid-area: recomendacion-1;
         background-color: rgb(255, 252, 252);
 
         width: 300px;
-        
-        img{
+
+        .texto-reco {
+            h5 {
+                font-size: 1.5rem;
+                margin: 30px;
+            }
+
+        }
+
+        img {
             width: 300px;
         }
 
 
     }
 
-    .recomendacion-1 :hover{
+    .recomendacion-1 :hover {
         width: 400px;
     }
-   
+
     .recomendacion-2 {
+        @extend .recomendacion-1;
         grid-area: recomendacion-2;
-        width: 300px;
-        background-color: white;
-        img{
-            width: 300px;
-        }
+        
     }
 
     .recomendacion-3 {
+        @extend recomendacion-1;
         grid-area: recomendacion-3;
-        width: 300px;
-        background-color: white;
-        img{
-            width: 300px;
-        }
-    }
+        
 }
 
 
 
-.rutas{
+.rutas {
     display: flex;
     justify-content: center;
-    
-    .mapa{
+
+    .mapa {
 
         margin: 50px;
     }
-    .texto-mapa{
+
+    .texto-mapa {
         margin: 50px;
 
-        h2{
+        h2 {
             margin-bottom: 30px;
         }
     }
 
+}
 }
