@@ -1,73 +1,98 @@
+header {
 
-header{
-    /*z-index: 10;*/
-    background-color: #fdfdfd;
-    position: sticky;
-    top: 0px;
 
-    img{
-        width: 200px;
-        margin: 30px;
-    }
 
-    .navbar-nav{
-        width: 50%;
-        justify-content: flex-end;
-     }
 
-     .navbar-collapse {
-        height: 80px;
-        display: flex;
-        align-content: space-between;
-        justify-content: flex-end;
+    .navbar {
 
-        li{
-            padding: 10px;
-            .menu{
-                color: #141414;
-                text-decoration: none;
-                font-size: 1.5rem;
-                font-weight:600;
-            
-            } 
+        /*z-index: 10;*/
+        
+        position: sticky;
+        top: 0px;
+
+        .navbar-brand{
+            img{
+                width: 200px;
+
+            }
         }
+
+        img {
+            width: 500px;
+            margin: 30px;
+        }
+
+        --bs-navbar-padding-x: 3rem;
+
+        .navbar-nav {
+            width: 50%;
+            justify-content: flex-end;
+
+
+        }
+
+        .navbar-collapse {
+            height: 80px;
+            display: flex;
+            align-content: space-between;
+            justify-content: flex-end;
+
+            .dropdown-menu {
+
+                --bs-dropdown-link-active-bg: none;
+
+            }
+
+            li {
+                padding: 10px;
+
+                .menu {
+                    color: #141414;
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+
+                }
+            }
+
+        }
+
+
     }
-    
+
 
 }
 
 
 /*footer*/
 
-footer{
+footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-area: 
-    "redes nombre";
+    grid-area:
+        "redes nombre";
 
-    background-color: #F4BA43;
+    background-color: #a19d95;
     color: black;
     width: 100%;
     height: 60px;
     font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
 
-    
-    .redes{
+
+    .redes {
         grid-area: redes;
-        img{
-            width: 35px;  
+
+        img {
+            width: 35px;
         }
     }
-    
-    .nombre{
+
+    .nombre {
         grid-area: nombre;
     }
-    
-    
+
+
 }
-
-
-

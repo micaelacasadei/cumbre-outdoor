@@ -59,10 +59,11 @@
 .recomendaciones-index {
   display: grid;
   grid-template-columns: repeat(3, 35%);
-  grid-template-areas: "recomendacion-1  recomendacion-2  recomendacion-3";
-  justify-content: space-around;
+  grid-template-areas:
+    "recomendacion-1  recomendacion-2  recomendacion-3";
   justify-items: center;
   margin: 30px;
+  justify-content: space-between;
 }
 .recomendaciones-index .recomendacion-1, .recomendaciones-index .recomendacion-3, .recomendaciones-index .recomendacion-2 {
   grid-area: recomendacion-1;
@@ -218,7 +219,7 @@
 }
 .recomendaciones-comunidad .recomendacion-1, .recomendaciones-comunidad .recomendaciones-index .recomendacion-2, .recomendaciones-index .recomendaciones-comunidad .recomendacion-2, .recomendaciones-comunidad .recomendaciones-index .recomendacion-3, .recomendaciones-index .recomendaciones-comunidad .recomendacion-3 {
   grid-area: recomendacion-1;
-  background-color: white;
+  background-color: #fff;
   width: 300px;
 }
 .recomendaciones-comunidad .recomendacion-1 img, .recomendaciones-comunidad .recomendaciones-index .recomendacion-2 img, .recomendaciones-index .recomendaciones-comunidad .recomendacion-2 img, .recomendaciones-comunidad .recomendaciones-index .recomendacion-3 img, .recomendaciones-index .recomendaciones-comunidad .recomendacion-3 img {
@@ -332,6 +333,7 @@ footer .nombre {
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&display=swap');*/
 /*--------------------html general------------------------------*/
 * {
+  FONT-WEIGHT: 200;
   margin: 0;
   padding: 0;
 }

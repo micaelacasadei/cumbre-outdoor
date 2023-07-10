@@ -6,7 +6,7 @@
 // font-family: 'Rock Salt', cursive;
 
 
-// @import "pages/catalogo.scss";
+
 
 @import "pages/index.scss";
 @import "pages/nosotros";
@@ -14,11 +14,11 @@
 @import "pages/comunidad";
 @import "pages/contacto";
 
-
+@import "utilities/variables";
 @import "utilities/headerFooter.scss";
 
 /* siempre el import de las media querys es el ultimo*/
-// @import "utilities/mediaQ.scss";
+ @import "utilities/mediaQ.scss";
 
 
 

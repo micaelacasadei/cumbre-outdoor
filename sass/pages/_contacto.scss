@@ -1,19 +1,40 @@
-.formulario{
+body{
+    background-color: $cumbre-beige;
+}
+
+
+.formulario {
 
     width: 50%;
 
     margin: 50px;
-}
+    
+    .form-control{
 
-.encontranos{
-
-    display: flex;
-    justify-content: flex-start;
-    .mapa-locales{
-        margin: 50px;
-    }
-    .direcciones{
-        margin: 50px; 
+        font-size: 2rem;
     }
 
+    .btn-primary {
+        --bs-btn-color: #fff;
+        --bs-btn-bg: #7e7b5b;
+        --bs-btn-border-color: #7e7b5b;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #9ad70b;
+        --bs-btn-hover-border-color: #2aca0a;
+    }
+
+    .encontranos {
+
+        display: flex;
+        justify-content: flex-start;
+
+        .mapa-locales {
+            margin: 50px;
+        }
+
+        .direcciones {
+            margin: 50px;
+        }
+
+    }
 }

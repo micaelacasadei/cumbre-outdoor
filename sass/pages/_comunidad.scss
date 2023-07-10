@@ -17,6 +17,10 @@
 //     }
 // }
 
+body{
+    background-color: $cumbre-beige;
+}
+
 .titulo-comunidad{
 
     h2{
@@ -38,7 +42,7 @@
 
     .recomendacion-1 {
         grid-area: recomendacion-1;
-        background-color: white;
+        background-color: rgb(255, 252, 252);
 
         width: 300px;
         
@@ -49,6 +53,10 @@
 
     }
 
+    .recomendacion-1 :hover{
+        width: 400px;
+    }
+   
     .recomendacion-2 {
         grid-area: recomendacion-2;
         width: 300px;
@@ -67,6 +75,8 @@
         }
     }
 }
+
+
 
 .rutas{
     display: flex;

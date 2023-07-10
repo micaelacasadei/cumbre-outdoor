@@ -1,3 +1,8 @@
+body{
+    background-color: $cumbre-beige;
+}
+
+
 .banner-catalogo {
     background-image: url(../medios/carousel1\ 1.jpg);
     height: 350px;
@@ -19,9 +24,10 @@
     top: 120px;
     align-content: space-around;
     width: 280px;
-    /*color de fondo de filtro hover*/
-    --bs-list-group-active-bg:none;
+    --bs-list-group-active-bg: none;
     --bs-list-group-active-border-color: none;
+
+   
 
 
     
@@ -35,11 +41,13 @@
         font-size: 1.5rem;
         font-weight: 600;
 
-        
     }
 
-    
+   
+        
+
 }
+
 
 .row{
 
