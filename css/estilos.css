@@ -1,19 +1,77 @@
-/*carousel*/
+/*font*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+/*@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&display=swap');*/
 @import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&family=Rock+Salt&display=swap");
-.carousel-inner h1 {
+header .navbar {
+  position: static;
+  top: 0px;
+  height: 90px;
+}
+header .navbar img {
+  width: 70%;
+  margin-left: 50px;
+}
+header .navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+header .navbar-expand-lg .navbar-collapse a {
+  margin: 12px;
+  font-size: 1.8rem;
+}
+header .navbar-brand .a img {
+  width: 10px;
+}
+header .bg-body-tertiary {
+  --bs-bg-opacity: 0;
+  background-color: blue;
+}
+
+/*footer*/
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-area: "nombre redes";
+  background-color: #a19d95;
+  color: black;
+  width: 100%;
+  height: 100px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .nombre {
+  grid-area: nombre;
+  margin: 60px;
+}
+footer .redes {
+  grid-area: redes;
+  margin: 60px;
+}
+footer .redes img {
+  width: 35px;
+  margin: 10px;
+}
+
+body {
+  background-color: #f5f5dc;
+}
+
+/*carousel*/
+.carouselExampleCaptions .carousel-inner h1 {
   font-size: 7rem;
 }
 
-/*destacados*/
+/*-------------------destacados*/
 .destacados {
   text-align: center;
-  background-color: rgb(253, 248, 248);
 }
 .destacados h2 {
   color: #141414;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin: 50px;
 }
 .destacados .filaDestacados {
   display: flex;
@@ -27,7 +85,7 @@
   align-items: center;
 }
 .destacados .filaDestacados .productoDestacado img {
-  width: 120%;
+  width: 90%;
 }
 .destacados .filaDestacados .productoDestacado a {
   font-size: 1.5rem;
@@ -37,20 +95,21 @@
   padding-bottom: 30px;
 }
 
-/*musica*/
+/*--------------musica*/
 .musica {
   background-color: #464543;
   text-align: center;
   font-size: 2rem;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 .musica h2 {
   color: antiquewhite;
   padding-bottom: 15px;
+  margin-bottom: 20px;
 }
 
-/*recomendaciones*/
+/*--------Recomendaciones-----------*/
 .recomendaciones-titulo {
   margin: 50px;
   text-align: center;
@@ -59,11 +118,10 @@
 .recomendaciones-index {
   display: grid;
   grid-template-columns: repeat(3, 35%);
-  grid-template-areas:
-    "recomendacion-1  recomendacion-2  recomendacion-3";
+  grid-template-areas: "recomendacion-1  recomendacion-2  recomendacion-3";
+  justify-content: space-around;
   justify-items: center;
   margin: 30px;
-  justify-content: space-between;
 }
 .recomendaciones-index .recomendacion-1, .recomendaciones-index .recomendacion-3, .recomendaciones-index .recomendacion-2 {
   grid-area: recomendacion-1;
@@ -91,6 +149,10 @@
   grid-area: recomendacion-3;
 }
 
+body {
+  background-color: #f5f5dc;
+}
+
 .banner-nosotros {
   width: 100%;
 }
@@ -99,11 +161,11 @@
   display: grid;
   grid-template-areas: "titulo-nos titulo-nos titulo-nos   titulo-nos" "foto1       foto1      texto1       texto1" "texto2      foto2      texto3       foto3";
   grid-template-columns: repeat(4, 20%);
-  grid-template-rows: 100px 280px 300px;
+  grid-template-rows: 100px 300px 300px;
   justify-content: space-around;
   justify-items: center;
   margin: 40px;
-  gap: 15px;
+  row-gap: 20px;
 }
 .nosotros-container .titulo-nos {
   grid-area: titulo-nos;
@@ -150,6 +212,10 @@
   grid-area: texto3;
 }
 
+body {
+  background-color: #f5f5dc;
+}
+
 .banner-catalogo {
   background-image: url(../medios/carousel1\ 1.jpg);
   height: 350px;
@@ -158,6 +224,15 @@
   margin-bottom: 30px;
   display: grid;
   grid-template-columns: 25% 75%;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.col-3 {
+  width: 20%;
 }
 
 .list-group {
@@ -169,30 +244,38 @@
   position: sticky;
   top: 120px;
   align-content: space-around;
-  width: 280px;
-  /*color de fondo de filtro hover*/
-  --bs-list-group-active-bg:none;
-  --bs-list-group-active-border-color: none;
+  width: 200px;
 }
 .list-group .list-group-item {
   border: none;
-  margin-top: 15px;
-  margin-bottom: 15px;
   color: #141414;
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 600;
+  background-color: #f5f5dc;
+}
+.list-group .list-group-item-action {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: none;
+}
+.list-group .list-group-item-action .active {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: none;
 }
 
-.row h1 {
-  font-size: 2.8rem;
+.row h3 {
+  font-size: 2rem;
   margin-bottom: 20px;
+  margin-top: 90px;
+  margin-left: 10px;
 }
 .row h4 {
   font-size: 2.5rem;
   font-weight: 200;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 .row .card {
   width: 75%;
@@ -205,8 +288,12 @@
   font-size: 1.2rem;
 }
 
+body {
+  background-color: #f5f5dc;
+}
+
 .titulo-comunidad h2 {
-  margin: 20px;
+  margin: 50px;
 }
 
 .recomendaciones-comunidad {
@@ -217,34 +304,32 @@
   justify-items: center;
   margin: 30px;
 }
-.recomendaciones-comunidad .recomendacion-1, .recomendaciones-comunidad .recomendaciones-index .recomendacion-2, .recomendaciones-index .recomendaciones-comunidad .recomendacion-2, .recomendaciones-comunidad .recomendaciones-index .recomendacion-3, .recomendaciones-index .recomendaciones-comunidad .recomendacion-3 {
+.recomendaciones-comunidad .recomendacion-1, .recomendaciones-comunidad .recomendacion-3, .recomendaciones-comunidad .recomendacion-2 {
   grid-area: recomendacion-1;
-  background-color: #fff;
+  background-color: rgb(255, 252, 252);
   width: 300px;
 }
-.recomendaciones-comunidad .recomendacion-1 img, .recomendaciones-comunidad .recomendaciones-index .recomendacion-2 img, .recomendaciones-index .recomendaciones-comunidad .recomendacion-2 img, .recomendaciones-comunidad .recomendaciones-index .recomendacion-3 img, .recomendaciones-index .recomendaciones-comunidad .recomendacion-3 img {
+.recomendaciones-comunidad .recomendacion-1 .texto-reco h5, .recomendaciones-comunidad .recomendacion-3 .texto-reco h5, .recomendaciones-comunidad .recomendacion-2 .texto-reco h5 {
+  font-size: 1.5rem;
+  margin: 30px;
+}
+.recomendaciones-comunidad .recomendacion-1 img, .recomendaciones-comunidad .recomendacion-3 img, .recomendaciones-comunidad .recomendacion-2 img {
   width: 300px;
 }
 .recomendaciones-comunidad .recomendacion-2 {
   grid-area: recomendacion-2;
-  width: 300px;
-  background-color: white;
-}
-.recomendaciones-comunidad .recomendacion-2 img {
-  width: 300px;
 }
 .recomendaciones-comunidad .recomendacion-3 {
   grid-area: recomendacion-3;
-  width: 300px;
-  background-color: white;
 }
-.recomendaciones-comunidad .recomendacion-3 img {
-  width: 300px;
+
+.musica p {
+  color: white;
+  margin-bottom: 20px;
 }
 
 .rutas {
   display: flex;
-  justify-content: center;
 }
 .rutas .mapa {
   margin: 50px;
@@ -256,84 +341,215 @@
   margin-bottom: 30px;
 }
 
+.titulo-comunidad-insta {
+  margin: 50px;
+}
+
+.compartido-instagram {
+  display: grid;
+  grid-template-areas: "insta1  insta2  insta3  " "insta1  insta5  insta3  ";
+  margin: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.compartido-instagram .insta1 {
+  grid-area: insta1;
+}
+.compartido-instagram .insta2 {
+  grid-area: insta2;
+}
+.compartido-instagram .insta3 {
+  grid-area: insta3;
+}
+.compartido-instagram .insta5 {
+  grid-area: insta5;
+}
+
+body {
+  background-color: #f5f5dc;
+}
+
+.titulo-contacto {
+  margin: 50px;
+  text-align: left;
+}
+
 .formulario {
   width: 50%;
   margin: 50px;
 }
+.formulario .form-control {
+  font-size: 1.8rem;
+}
+.formulario .form-label {
+  font-size: 1.8rem;
+}
+.formulario .btn-primary {
+  background-color: rgb(69, 167, 30);
+  border-color: rgb(69, 167, 30);
+}
 
 .encontranos {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .encontranos .mapa-locales {
-  margin: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
 }
 .encontranos .direcciones {
-  margin: 50px;
-}
-
-header {
-  /*z-index: 10;*/
-  background-color: #fdfdfd;
-  position: sticky;
-  top: 0px;
-}
-header img {
-  width: 200px;
-  margin: 30px;
-}
-header .navbar-nav {
-  width: 50%;
-  justify-content: flex-end;
-}
-header .navbar-collapse {
-  height: 80px;
-  display: flex;
-  align-content: space-between;
-  justify-content: flex-end;
-}
-header .navbar-collapse li {
-  padding: 10px;
-}
-header .navbar-collapse li .menu {
-  color: #141414;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-/*footer*/
-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-area: "redes nombre";
-  background-color: #F4BA43;
-  color: black;
-  width: 100%;
-  height: 60px;
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-footer .redes {
-  grid-area: redes;
-}
-footer .redes img {
-  width: 35px;
-}
-footer .nombre {
-  grid-area: nombre;
+  margin-left: 50px;
 }
 
 /* siempre el import de las media querys es el ultimo*/
-/*font*/
-/*@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&display=swap');*/
+/* --------responsibe mobile------------------*/
+@media only screen and (max-width: 500px) {
+  /*navbar*/
+  .navbar img {
+    width: 5px;
+    margin-left: 5px;
+  }
+  .navbar .container-fluid {
+    flex-wrap: nowrap;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    margin-right: 0px;
+  }
+  /*-----------footer--------------------------*/
+  footer {
+    flex-direction: column;
+    align-items: center;
+    height: 120px;
+  }
+  footer .redes {
+    margin: 10px;
+  }
+  footer .nombre {
+    margin: 10px;
+  }
+  /* ------------- index--------------------*/
+  /*----destacados-----------*/
+  .destacados h2 {
+    font-size: 2.3rem;
+    margin: 30px;
+  }
+  .destacados .filaDestacados {
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+  }
+  /*------musica----*/
+  .musica h2 {
+    font-size: 2.3rem;
+    margin: 30 px;
+  }
+  /*-----rcomendaciones -----*/
+  .recomendaciones-titulo {
+    font-size: 2.3rem;
+    margin: 30px;
+  }
+  .recomendaciones-index {
+    grid-template-rows: repeat(3, 400px);
+    grid-template-areas: "recomendacion-1 " " recomendacion-2" "  recomendacion-3";
+    justify-content: center;
+    row-gap: 15px;
+    grid-template-columns: 85%;
+  }
+  .recomendaciones-index .recomendacion-1 h5, .recomendaciones-index .recomendacion-2 h5, .recomendaciones-index .recomendacion-3 h5 {
+    margin-bottom: 10px;
+  }
+  .titulo-comunidad h2 {
+    font-size: 2rem;
+  }
+  /*----------------------Nosotros--------*/
+  .banner-nosotros {
+    display: none;
+  }
+  .nosotros-container {
+    grid-template-areas: "titulo-nos" "foto1" "texto1" "texto2" "texto3" "foto3";
+    grid-template-columns: 85%;
+    grid-template-rows: 20px 140px 220px 110px 130px 310px;
+    margin: 15px;
+  }
+  .nosotros-container .titulo-nos {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .nosotros-container .foto1 img {
+    width: 100%;
+  }
+  .nosotros-container .texto1 p {
+    font-size: 1rem;
+  }
+  .nosotros-container .foto2 {
+    display: none;
+  }
+  .nosotros-container .texto2 p {
+    font-size: 1rem;
+  }
+  .nosotros-container .texto3 p {
+    font-size: 1rem;
+  }
+  /*-------- catalogo mujer------*/
+  .banner-catalogo {
+    display: none;
+  }
+  .titulo-catalogo {
+    display: none;
+  }
+  .titulo-h1-catalogo {
+    font-size: 2rem;
+  }
+  .col-3 {
+    width: 100%;
+  }
+  .col-3 a {
+    align-items: center;
+  }
+  .col-9 {
+    width: 100%;
+    align-items: center;
+  }
+  .catalogo-filtro {
+    display: flex;
+    flex-direction: row;
+  }
+  .catalogo-fondo {
+    align-items: center;
+  }
+  .list-group {
+    flex-direction: row;
+    padding: 0px;
+  }
+  .list-group .list-group-item {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .list-group .list-group-item-action .active {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  /*------------comunidad--------------*/
+  .recomendaciones-comunidad {
+    display: grid;
+    grid-template-rows: repeat(3, 350);
+    grid-template-areas: "recomendacion-1" " recomendacion-2" "recomendacion-3";
+    margin: 0px;
+  }
+  .recomendaciones-comunidad .recomendacion-1, .recomendaciones-comunidad .recomendacion-2, .recomendaciones-comunidad .recomendacion-3 {
+    width: 200px;
+  }
+  .recomendaciones-comunidad .recomendacion-1 img, .recomendaciones-comunidad .recomendacion-2 img, .recomendaciones-comunidad .recomendacion-3 img {
+    width: 200px;
+  }
+  /*--------------------contacto----------*/
+  .formulario {
+    width: 250px;
+  }
+}
 /*--------------------html general------------------------------*/
 * {
-  FONT-WEIGHT: 200;
   margin: 0;
   padding: 0;
 }

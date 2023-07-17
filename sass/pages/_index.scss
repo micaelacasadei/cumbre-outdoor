@@ -3,15 +3,20 @@ body{
 }
 
 /*carousel*/
+.carouselExampleCaptions{
+   
+    .carousel-inner {
 
-
-.carousel-inner {
-    h1 {
-        font-size: 7rem;
+        h1 {
+            font-size: 7rem;
+        }
     }
+
 }
 
-/*destacados*/
+
+
+/*-------------------destacados*/
 
 
 .destacados {
@@ -20,8 +25,7 @@ body{
 
     h2 {
         color: #141414;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        margin: 50px;
 
     }
 
@@ -37,7 +41,7 @@ body{
             align-items: center;
 
             img {
-                width: 80%;
+                width: 90%;
             }
            
 
@@ -56,83 +60,25 @@ body{
     }
 }
 
-/*musica*/
+/*--------------musica*/
 
 .musica {
     background-color: #464543;
     text-align: center;
     font-size: 2rem;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 
     h2 {
         color: antiquewhite;
         padding-bottom: 15px;
+        margin-bottom: 20px;
+        
     }
 
 }
 
-/*recomendaciones*/
-
-// .recomendaciones {
-
-//     background-color: #e4d280;
-//     text-align: center;
-//     font-size: 2rem;
-
-//     h1 {
-//         text-align: center;
-//         padding: 10px;
-//     }
-
-//     .cards-recomendaciones {
-//         display: grid;
-//         grid-template-areas:
-//             "card-reco1  card-reco2  card-reco3";
-//         grid-template-columns: repeat(3, 40%);
-//         justify-content: space-around;
-
-//         padding: 30px;
-
-
-//         .card-reco1 {
-//             grid-area: card-reco1;
-
-//             img{
-//                 width: 300px;
-//             }
-
-//             .card-body {
-//                 width: 25rem;
-//                 a{
-//                     text-decoration: none;
-//                     color: #000;
-
-//                 }
-//                 .btn-primary {
-//                     --bs-btn-color: black;
-//                     --bs-btn-bg:none;
-//                 }
-//             }
-//         }
-
-//         .card-reco2 {
-//             @extend .card-reco1;
-//             grid-area: card-reco2;
-
-//         }
-
-//         .card-reco3 {
-//             @extend .card-reco1;
-//             grid-area: card-reco3;
-
-//         }
-
-//         img {
-//             width: 300px;
-//         }
-//     }
-// }
+/*--------Recomendaciones-----------*/
 
 .recomendaciones-titulo {
     margin: 50px;

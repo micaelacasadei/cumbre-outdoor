@@ -2,39 +2,54 @@ body{
     background-color: $cumbre-beige;
 }
 
+.titulo-contacto{
+margin: 50px;
+text-align: left;
+
+}
+
 
 .formulario {
 
     width: 50%;
 
     margin: 50px;
+
+ 
     
     .form-control{
 
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
-    .btn-primary {
-        --bs-btn-color: #fff;
-        --bs-btn-bg: #7e7b5b;
-        --bs-btn-border-color: #7e7b5b;
-        --bs-btn-hover-color: #fff;
-        --bs-btn-hover-bg: #9ad70b;
-        --bs-btn-hover-border-color: #2aca0a;
+    .form-label{
+        font-size: 1.8rem;
     }
 
-    .encontranos {
+    .btn-primary{
+        background-color: rgb(69, 167, 30);
+        border-color: rgb(69, 167, 30);
+    }
+
+    
+}
+ 
+.encontranos {
 
         display: flex;
-        justify-content: flex-start;
+        flex-direction: row;
+        
+        justify-content: space-between;
+       
 
         .mapa-locales {
-            margin: 50px;
+            margin-right: 50px;
+            margin-bottom: 50px;
         }
 
         .direcciones {
-            margin: 50px;
+            margin-left: 50px;
+            
         }
 
     }
-}

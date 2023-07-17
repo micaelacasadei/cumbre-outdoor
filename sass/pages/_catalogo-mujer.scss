@@ -13,6 +13,16 @@ body{
     grid-template-columns: 25% 75%;
 }
 
+h1{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.col-3{
+
+    width: 20%;
+}
+
 
 .list-group {
     grid-column: 1/2;
@@ -23,23 +33,44 @@ body{
     position: sticky;
     top: 120px;
     align-content: space-around;
-    width: 280px;
-    --bs-list-group-active-bg: none;
-    --bs-list-group-active-border-color: none;
-
-   
+    width: 200px;
+       
 
 
     
     .list-group-item{
         border:none;
-        margin-top: 15px;
-        margin-bottom: 15px;
+       
 
         color: #141414;
         text-decoration: none;
         font-size: 1.5rem;
         font-weight: 600;
+        background-color: $cumbre-beige;
+        
+       
+
+    }
+
+   
+
+    
+
+    .list-group-item-action{
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: none;
+
+        .active{
+
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: none;
+
+            
+        }
+
 
     }
 
@@ -51,21 +82,36 @@ body{
 
 .row{
 
-    h1{
-        font-size: 2.8rem;
-       margin-bottom: 20px;
-    }
+    
+
+   
+
+        
+       
+        
+        h3{
+            font-size: 2rem;
+           margin-bottom: 20px;
+           margin-top: 90px;
+           margin-left: 10px;
+           
+        }
+
+   
+
+ 
 
     h4{
         font-size: 2.5rem;
         font-weight: 200;
-        margin-top: 10px;
-        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-bottom: 50px;
     }
 
     .card {
         width: 75%;
         border: none;
+
       
 
      .card-title{

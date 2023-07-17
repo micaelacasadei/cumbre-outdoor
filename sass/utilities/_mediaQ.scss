@@ -6,40 +6,81 @@
     .navbar {
 
         img {
-            width: 30px;
+            width: 5px;
+            margin-left: 5px;
+        }
+
+        .container-fluid{
+            flex-wrap: nowrap;
         }
     }
 
+    
+    .navbar-expand-lg {
+
+        .navbar-collapse {
+          
+            margin-right: 0px;
+        }
+    }    
+
     /*-----------footer--------------------------*/
 
+    footer {
+
+        flex-direction: column;
+        align-items: center;
+        height: 120px;
+
+        
+
+        .redes {
+            margin: 10px;
+        }
+
+        .nombre {
+            margin: 10px
+        }
+    }
 
 
     /* ------------- index--------------------*/
 
-    .carousel-inner h1 {
-        font-size: 3rem;
-    }
-
     /*----destacados-----------*/
 
-    .filaDestacados {
-        flex-direction: column;
-        align-content: space-around;
-        justify-content: center;
+    .destacados {
+        h2 {
+            font-size: 2.3rem;
+            margin: 30px;
+        }
 
+
+        .filaDestacados {
+            flex-direction: column;
+            align-content: space-around;
+            justify-content: center;
+
+        }
     }
 
     /*------musica----*/
-    .musica h2 {
-        font-size: 2rem;
+    .musica {
+        h2 {
+            font-size: 2.3rem;
+            margin: 30 px;
+        }
     }
 
     /*-----rcomendaciones -----*/
 
+    .recomendaciones-titulo {
+        font-size: 2.3rem;
+        margin: 30px;
+    }
 
-    .recomendaciones-comunidad {
+    .recomendaciones-index {
 
-        grid-template-rows: repeat(3, 300px);
+        grid-template-rows: repeat(3, 400px);
         grid-template-areas:
             "recomendacion-1 "
             " recomendacion-2"
@@ -48,6 +89,12 @@
         justify-content: center;
         row-gap: 15px;
         grid-template-columns: 85%;
+
+        .recomendacion-1 {
+            h5 {
+                margin-bottom: 10px;
+            }
+        }
 
 
     }
@@ -61,7 +108,7 @@
 
     }
 
-    /*nosotros*/
+    /*----------------------Nosotros--------*/
 
     .banner-nosotros {
         display: none;
@@ -79,15 +126,28 @@
             "foto3";
 
         grid-template-columns: 85%;
-        grid-template-rows: 60px 170px 260px 130px 150px 330px;
+        grid-template-rows: 20px 140px 220px 110px 130px 310px;
+
+        margin: 15px;
 
         .titulo-nos {
-            font-size: 2.5rem;
+            font-size: 2rem;
             text-align: center;
         }
 
-        .texto1 p {
-            font-size: 1.2rem;
+        .foto1 {
+
+            img {
+                width: 100%;
+            }
+
+        }
+
+        .texto1 {
+            p {
+                font-size: 1rem;
+            }
+
         }
 
         .foto2 {
@@ -95,16 +155,111 @@
         }
 
         .texto2 p {
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
 
         .texto3 p {
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
 
 
 
     }
+
+    /*-------- catalogo mujer------*/
+
+    .banner-catalogo {
+        display: none;
+    }
+
+    .titulo-catalogo {
+        display: none;
+    }
+
+    .titulo-h1-catalogo {
+        font-size: 2rem;
+    }
+
+    .col-3 {
+        width: 100%;
+
+        a {
+            align-items: center;
+        }
+
+
+    }
+
+    .col-9 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .catalogo-filtro {
+
+
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .catalogo-fondo {
+
+        align-items: center;
+
+    }
+
+    .list-group {
+
+        flex-direction: row;
+        padding: 0px;
+
+        .list-group-item {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .list-group-item-action {
+            .active {
+                font-size: 1rem;
+                font-weight: 400;
+            }
+        }
+
+
+    }
+
+
+    /*------------comunidad--------------*/
+
+    .recomendaciones-comunidad {
+
+        display: grid;
+        grid-template-rows: repeat(3, 350);
+
+        grid-template-areas:
+            "recomendacion-1"
+            " recomendacion-2"
+            "recomendacion-3";
+
+        margin: 0px;
+
+        .recomendacion-1{
+            width: 200px;
+            img {
+                width: 200px;
+            }
+        }
+
+    }
+
+
+/*--------------------contacto----------*/
+
+.formulario{
+    width: 250px;
+}
+
 
 
 

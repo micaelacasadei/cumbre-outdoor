@@ -63,9 +63,7 @@ body {
 
     }
 
-    .recomendacion-1 :hover {
-        width: 400px;
-    }
+   
 
     .recomendacion-2 {
         @extend .recomendacion-1;
@@ -74,16 +72,24 @@ body {
     }
 
     .recomendacion-3 {
-        @extend recomendacion-1;
+        @extend .recomendacion-1;
         grid-area: recomendacion-3;
         
 }
 
 
+}
 
+.musica{
+    p{
+        color: white;
+        margin-bottom: 20px;
+    }
+}
 .rutas {
+
     display: flex;
-    justify-content: center;
+
 
     .mapa {
 
@@ -99,4 +105,46 @@ body {
     }
 
 }
+
+.titulo-comunidad-insta{
+    margin: 50px;
+}
+
+
+.compartido-instagram{
+    display: grid;
+  
+
+    grid-template-areas: 
+    "insta1  insta2  insta3  "
+    "insta1  insta5  insta3  ";
+
+    margin: 50px;
+  align-items: center;
+    justify-content: center;
+
+    .insta1{
+        grid-area: insta1;
+        
+        
+
+    }
+
+    .insta2{
+        grid-area: insta2;
+        
+            
+       
+       
+    }
+    .insta3{
+        grid-area: insta3;
+        
+       
+    }
+    .insta5{
+        grid-area: insta5;
+            }
+
+
 }
