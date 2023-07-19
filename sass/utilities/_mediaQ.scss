@@ -5,24 +5,42 @@
     /*navbar*/
     .navbar {
 
+
+
         img {
-            width: 5px;
+            width: 30%;
             margin-left: 5px;
         }
 
-        .container-fluid{
-            flex-wrap: nowrap;
-        }
+
     }
 
-    
+
+
+    .container-fluid {
+
+
+        align-content: space-around;
+        align-items: center;
+    }
+
     .navbar-expand-lg {
 
+
         .navbar-collapse {
-          
-            margin-right: 0px;
+
+
+            .nav-link {
+                margin: 1px;
+                padding: 2px;
+                font-size: 5rem;
+            }
+
+
         }
-    }    
+
+    }
+
 
     /*-----------footer--------------------------*/
 
@@ -32,7 +50,7 @@
         align-items: center;
         height: 120px;
 
-        
+
 
         .redes {
             margin: 10px;
@@ -235,30 +253,62 @@
     .recomendaciones-comunidad {
 
         display: grid;
-        grid-template-rows: repeat(3, 350);
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 400px);
 
         grid-template-areas:
             "recomendacion-1"
             " recomendacion-2"
             "recomendacion-3";
 
-        margin: 0px;
+        justify-content: center;
+        justify-items: start;
 
-        .recomendacion-1{
-            width: 200px;
+        .recomendacion-1 {
+            width: 300px;
+
             img {
-                width: 200px;
+                width: 300px;
+            }
+        }
+
+    }
+
+    .rutas {
+
+        flex-direction: column;
+
+
+
+        .mapa {
+
+            iframe {
+                width: 300px;
+            }
+
+        }
+
+        .texto-mapa {
+            margin: 50px;
+
+            h2 {
+                margin-bottom: 30px;
             }
         }
 
     }
 
 
-/*--------------------contacto----------*/
+    .compartido-instagram {
+        display: flex;
+        flex-direction: column;
+    }
 
-.formulario{
-    width: 250px;
-}
+    /*--------------------contacto----------*/
+
+    .formulario {
+        width: 250px;
+    }
 
 
 

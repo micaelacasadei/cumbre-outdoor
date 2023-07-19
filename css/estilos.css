@@ -4,29 +4,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&display=swap');*/
 @import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&family=Rock+Salt&display=swap");
+header {
+  position: sticky;
+  z-index: 10;
+  top: 0%;
+}
 header .navbar {
-  position: static;
-  top: 0px;
-  height: 90px;
+  align-items: center;
 }
 header .navbar img {
   width: 70%;
   margin-left: 50px;
 }
+header .navbar-expand-lg .bg-body-tertiary {
+  background-color: red;
+}
 header .navbar-expand-lg .navbar-collapse {
   justify-content: flex-end;
   margin-right: 40px;
 }
-header .navbar-expand-lg .navbar-collapse a {
-  margin: 12px;
+header .navbar-expand-lg .navbar-collapse .nav-link {
   font-size: 1.8rem;
-}
-header .navbar-brand .a img {
-  width: 10px;
-}
-header .bg-body-tertiary {
-  --bs-bg-opacity: 0;
-  background-color: blue;
+  margin: 12px;
 }
 
 /*footer*/
@@ -407,14 +406,17 @@ body {
 @media only screen and (max-width: 500px) {
   /*navbar*/
   .navbar img {
-    width: 5px;
+    width: 30%;
     margin-left: 5px;
   }
-  .navbar .container-fluid {
-    flex-wrap: nowrap;
+  .container-fluid {
+    align-content: space-around;
+    align-items: center;
   }
-  .navbar-expand-lg .navbar-collapse {
-    margin-right: 0px;
+  .navbar-expand-lg .navbar-collapse .nav-link {
+    margin: 1px;
+    padding: 2px;
+    font-size: 5rem;
   }
   /*-----------footer--------------------------*/
   footer {
@@ -533,15 +535,33 @@ body {
   /*------------comunidad--------------*/
   .recomendaciones-comunidad {
     display: grid;
-    grid-template-rows: repeat(3, 350);
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 400px);
     grid-template-areas: "recomendacion-1" " recomendacion-2" "recomendacion-3";
-    margin: 0px;
+    justify-content: center;
+    justify-items: start;
   }
   .recomendaciones-comunidad .recomendacion-1, .recomendaciones-comunidad .recomendacion-2, .recomendaciones-comunidad .recomendacion-3 {
-    width: 200px;
+    width: 300px;
   }
   .recomendaciones-comunidad .recomendacion-1 img, .recomendaciones-comunidad .recomendacion-2 img, .recomendaciones-comunidad .recomendacion-3 img {
-    width: 200px;
+    width: 300px;
+  }
+  .rutas {
+    flex-direction: column;
+  }
+  .rutas .mapa iframe {
+    width: 300px;
+  }
+  .rutas .texto-mapa {
+    margin: 50px;
+  }
+  .rutas .texto-mapa h2 {
+    margin-bottom: 30px;
+  }
+  .compartido-instagram {
+    display: flex;
+    flex-direction: column;
   }
   /*--------------------contacto----------*/
   .formulario {

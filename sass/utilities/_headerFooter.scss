@@ -1,25 +1,32 @@
 header {
 
+        position: sticky;
+        z-index: 10;
+        top: 0%;
+       
 
-    
+
     .navbar {
 
-        position:static;
-        top: 0px;
-        height: 90px;
+       
+       align-items: center;
+        // height: 90px;
 
-        img{
+        img {
             width: 70%;
             margin-left: 50px;
         }
-        
-   
-    }
+       
 
-   
+    }
     
 
     .navbar-expand-lg {
+       
+        .bg-body-tertiary {
+            background-color: red;
+        }
+        
 
         
 
@@ -27,28 +34,16 @@ header {
             justify-content: flex-end;
             margin-right: 40px;
 
-            a {
-                margin: 12px;
+            
+
+            .nav-link{
                 font-size: 1.8rem;
+                margin: 12px;
             }
         }
-
+        
     }
 
-    /////////// de todo esto nada funciona para cambiar tamaño logo y fondo
-
-    .navbar-brand{
-        .a{
-            img{
-              width: 10px;}
-        }    
-          
-      }
-    .bg-body-tertiary {
-        --bs-bg-opacity: 0;
-        background-color: blue;
-    }
-    
 
 
 
@@ -76,7 +71,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 
     .nombre {
         grid-area: nombre;
@@ -93,7 +88,7 @@ footer {
         }
     }
 
-    
+
 
 
 }
