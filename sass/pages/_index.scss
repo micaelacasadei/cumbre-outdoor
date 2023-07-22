@@ -3,16 +3,34 @@ body{
 }
 
 /*carousel*/
-.carouselExampleCaptions{
    
-    .carousel-inner {
+    .carrousel-index-1 {
 
         h1 {
             font-size: 7rem;
         }
+        p{
+            font-size: 3rem;
+        }
     }
 
-}
+    .carrousel-index-2{
+        h2 {
+            font-size: 5rem;
+        }
+        p{
+            font-size: 3rem;
+        }
+    }
+
+    .carrousel-index-3{
+        h2 {
+            font-size: 5rem;
+        }
+        p{
+            font-size: 3rem;
+        }
+    }
 
 
 
@@ -85,6 +103,7 @@ body{
     text-align: center;
 }
 
+
 .recomendaciones-index {
 
     display: grid;
@@ -119,8 +138,12 @@ body{
             width: 300px;
         }
 
+      
+
 
     }
+
+
 
     .recomendacion-2 {
         @extend .recomendacion-1;
@@ -133,4 +156,6 @@ body{
         grid-area: recomendacion-3;
 
     }
+
+    
 }

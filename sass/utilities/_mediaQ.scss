@@ -3,17 +3,37 @@
 @media only screen and (max-width: 500px) {
 
     /*navbar*/
-    .navbar {
+  
+  header{
 
 
+ .menu-hamburguesa {
+        margin-right: 50px;
+        border: 1px solid;
+
+
+    }
+
+ .barra-navegacion {
+     
+    .logo-nav {
+
+        width: 50%;
+    }
 
         img {
-            width: 30%;
-            margin-left: 5px;
+            width: 60%;
+            margin-left: 10px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        
         }
 
 
     }
+
+  }
+   
 
 
 
@@ -66,6 +86,11 @@
 
     /*----destacados-----------*/
 
+    .carrousel-index-1{
+        h1{
+            font-size: 1rem;
+        }
+    }
     .destacados {
         h2 {
             font-size: 2.3rem;
@@ -150,6 +175,8 @@
 
         .titulo-nos {
             font-size: 2rem;
+            margin-top: 50px;
+            margin-bottom: 20px;
             text-align: center;
         }
 
@@ -157,6 +184,8 @@
 
             img {
                 width: 100%;
+                margin-bottom: 20px;
+                margin-top: 20px;
             }
 
         }
@@ -164,6 +193,8 @@
         .texto1 {
             p {
                 font-size: 1rem;
+                margin-bottom: 20px;
+                margin-top: 20px;
             }
 
         }
@@ -195,7 +226,8 @@
     }
 
     .titulo-h1-catalogo {
-        font-size: 2rem;
+        margin-top: 20px;
+        h1{font-size: 2.5rem;}
     }
 
     .col-3 {
@@ -213,19 +245,30 @@
         align-items: center;
     }
 
+/* lo de abajo no sirve para nada*/
+
     .catalogo-filtro {
 
 
         display: flex;
         flex-direction: row;
 
+        .filtro{
+            position: sticky;
+            top:120px
+        }
+
     }
 
+    
     .catalogo-fondo {
 
         align-items: center;
 
     }
+
+
+ /* hasta aca*/
 
     .list-group {
 
@@ -318,4 +361,48 @@
 
 
 
+}
+
+//tablet
+@media only screen and (min-width: 499px) and (max-width: 978px) {
+
+    header{
+        .barra-navegacion {
+            
+       
+               img {
+                   width: 80%;
+                   margin-left: 50px;
+                   margin-top: 25px;
+                   margin-bottom: 25px;
+               
+               }
+       
+       
+           }
+       
+         }
+          
+
+
+
+
+
+}
+
+
+//version desktop
+
+@media only screen and (min-width: 979px) {
+
+    header {
+
+        .barra-navegacion {
+            height: 100px;
+
+
+        }
+
+       
+    }
 }

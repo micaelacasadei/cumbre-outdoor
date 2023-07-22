@@ -1,52 +1,68 @@
 header {
 
-        position: sticky;
-        z-index: 10;
-        top: 0%;
-       
+    position: sticky;
+    z-index: 10;
+    top: 0%;
 
+    .menu-hamburguesa {
+        margin-right: 50px;
+        border: 1px solid;
 
-    .navbar {
-
-       
-       align-items: center;
-        // height: 90px;
-
-        img {
-            width: 70%;
-            margin-left: 50px;
-        }
-       
 
     }
-    
+
+
+    .barra-navegacion {
+        
+        background-color: rgb(100, 146, 78);
+
+        align-items: center;
+        // height: 120px;
+
+
+
+        .logo-nav {
+
+
+            img {
+                width: 70%;
+                margin-left: 50px;
+            }
+
+
+        }
+
+
+    }
+
 
     .navbar-expand-lg {
-       
-        .bg-body-tertiary {
-            background-color: red;
-        }
-        
 
-        
 
         .navbar-collapse {
             justify-content: flex-end;
             margin-right: 40px;
 
-            
 
-            .nav-link{
+
+            .nav-link {
                 font-size: 1.8rem;
                 margin: 12px;
             }
+
+            .dropdown.menu {
+                .dropdown-item {
+
+                    font-size: 1rem;
+                }
+            }
         }
-        
+
     }
 
-
-
-
+    .fuente-desplegable {
+        font-size: 2rem;
+    }
 
 
 

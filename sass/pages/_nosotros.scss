@@ -1,12 +1,22 @@
 
 body{
     background-color: $cumbre-beige;
+    
+    h1{
+    margin-top: 20px;
+    padding-bottom: 0px;
+    
+   }
 }
 
 
 .banner-nosotros {
     width: 100%;
+     
 }
+
+
+
 
 .nosotros-container {
 
@@ -18,10 +28,10 @@ body{
     ;
 
     grid-template-columns: repeat(4, 20%);
-    grid-template-rows: 100px 300px 300px;
+    grid-template-rows: 80px 300px 300px;
     justify-content:space-around;
     justify-items: center;
-    margin: 40px;
+    margin:0px 40px 40px 40px;
     
     
     row-gap: 20px;

@@ -9,15 +9,17 @@ header {
   z-index: 10;
   top: 0%;
 }
-header .navbar {
+header .menu-hamburguesa {
+  margin-right: 50px;
+  border: 1px solid;
+}
+header .barra-navegacion {
+  background-color: rgb(100, 146, 78);
   align-items: center;
 }
-header .navbar img {
+header .barra-navegacion .logo-nav img {
   width: 70%;
   margin-left: 50px;
-}
-header .navbar-expand-lg .bg-body-tertiary {
-  background-color: red;
 }
 header .navbar-expand-lg .navbar-collapse {
   justify-content: flex-end;
@@ -26,6 +28,12 @@ header .navbar-expand-lg .navbar-collapse {
 header .navbar-expand-lg .navbar-collapse .nav-link {
   font-size: 1.8rem;
   margin: 12px;
+}
+header .navbar-expand-lg .navbar-collapse .dropdown.menu .dropdown-item {
+  font-size: 1rem;
+}
+header .fuente-desplegable {
+  font-size: 2rem;
 }
 
 /*footer*/
@@ -60,8 +68,25 @@ body {
 }
 
 /*carousel*/
-.carouselExampleCaptions .carousel-inner h1 {
+.carrousel-index-1 h1 {
   font-size: 7rem;
+}
+.carrousel-index-1 p {
+  font-size: 3rem;
+}
+
+.carrousel-index-2 h2 {
+  font-size: 5rem;
+}
+.carrousel-index-2 p {
+  font-size: 3rem;
+}
+
+.carrousel-index-3 h2 {
+  font-size: 5rem;
+}
+.carrousel-index-3 p {
+  font-size: 3rem;
 }
 
 /*-------------------destacados*/
@@ -151,6 +176,10 @@ body {
 body {
   background-color: #f5f5dc;
 }
+body h1 {
+  margin-top: 20px;
+  padding-bottom: 0px;
+}
 
 .banner-nosotros {
   width: 100%;
@@ -160,10 +189,10 @@ body {
   display: grid;
   grid-template-areas: "titulo-nos titulo-nos titulo-nos   titulo-nos" "foto1       foto1      texto1       texto1" "texto2      foto2      texto3       foto3";
   grid-template-columns: repeat(4, 20%);
-  grid-template-rows: 100px 300px 300px;
+  grid-template-rows: 80px 300px 300px;
   justify-content: space-around;
   justify-items: center;
-  margin: 40px;
+  margin: 0px 40px 40px 40px;
   row-gap: 20px;
 }
 .nosotros-container .titulo-nos {
@@ -405,9 +434,18 @@ body {
 /* --------responsibe mobile------------------*/
 @media only screen and (max-width: 500px) {
   /*navbar*/
-  .navbar img {
-    width: 30%;
-    margin-left: 5px;
+  header .menu-hamburguesa {
+    margin-right: 50px;
+    border: 1px solid;
+  }
+  header .barra-navegacion .logo-nav {
+    width: 50%;
+  }
+  header .barra-navegacion img {
+    width: 60%;
+    margin-left: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
   .container-fluid {
     align-content: space-around;
@@ -432,6 +470,9 @@ body {
   }
   /* ------------- index--------------------*/
   /*----destacados-----------*/
+  .carrousel-index-1 h1 {
+    font-size: 1rem;
+  }
   .destacados h2 {
     font-size: 2.3rem;
     margin: 30px;
@@ -476,13 +517,19 @@ body {
   }
   .nosotros-container .titulo-nos {
     font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
     text-align: center;
   }
   .nosotros-container .foto1 img {
     width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
   .nosotros-container .texto1 p {
     font-size: 1rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
   .nosotros-container .foto2 {
     display: none;
@@ -501,7 +548,10 @@ body {
     display: none;
   }
   .titulo-h1-catalogo {
-    font-size: 2rem;
+    margin-top: 20px;
+  }
+  .titulo-h1-catalogo h1 {
+    font-size: 2.5rem;
   }
   .col-3 {
     width: 100%;
@@ -513,13 +563,19 @@ body {
     width: 100%;
     align-items: center;
   }
+  /* lo de abajo no sirve para nada*/
   .catalogo-filtro {
     display: flex;
     flex-direction: row;
   }
+  .catalogo-filtro .filtro {
+    position: sticky;
+    top: 120px;
+  }
   .catalogo-fondo {
     align-items: center;
   }
+  /* hasta aca*/
   .list-group {
     flex-direction: row;
     padding: 0px;
@@ -568,6 +624,19 @@ body {
     width: 250px;
   }
 }
+@media only screen and (min-width: 499px) and (max-width: 978px) {
+  header .barra-navegacion img {
+    width: 80%;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 979px) {
+  header .barra-navegacion {
+    height: 100px;
+  }
+}
 /*--------------------html general------------------------------*/
 * {
   margin: 0;
@@ -580,7 +649,7 @@ html {
   font-family: "Inter", sans-serif;
 }
 html h1 {
-  font-size: 3.5rem;
+  font-size: 6rem;
   font-weight: 600;
 }
 html h2 {
