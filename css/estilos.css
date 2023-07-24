@@ -179,6 +179,7 @@ body {
 body h1 {
   margin-top: 20px;
   padding-bottom: 0px;
+  text-align: center;
 }
 
 .banner-nosotros {
@@ -252,68 +253,67 @@ body {
   margin-bottom: 30px;
   display: grid;
   grid-template-columns: 25% 75%;
+  align-items: center;
 }
 
-h1 {
+.titulo-h1-catalogo {
+  width: 100%;
   text-align: center;
-  padding-bottom: 30px;
+  margin-top: 230px;
 }
-
-.col-3 {
+.catalogo-completo .catalogo-filtro {
   width: 20%;
+  margin-right: 40px;
 }
-
-.list-group {
-  grid-column: 1/2;
+.catalogo-completo .catalogo-filtro .titulo-catalogo {
+  margin-bottom: 15px;
+}
+.catalogo-completo .catalogo-filtro .filtro {
   display: flex;
-  flex-direction: column;
   padding: 0 0 30px 30px;
+  margin-top: 80px;
   justify-content: flex-start;
   position: sticky;
-  top: 120px;
+  top: 180px;
   align-content: space-around;
-  width: 200px;
 }
-.list-group .list-group-item {
+.catalogo-completo .catalogo-filtro .filtro .categoria {
   border: none;
   color: #141414;
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 600;
   background-color: #f5f5dc;
-}
-.list-group .list-group-item-action {
   margin-top: 15px;
   margin-bottom: 15px;
-  padding: none;
 }
-.list-group .list-group-item-action .active {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding: none;
+.catalogo-completo .catalogo-fondo {
+  background-color: white;
 }
-
-.row h3 {
+.catalogo-completo .catalogo-fondo h3 {
   font-size: 2rem;
   margin-bottom: 20px;
   margin-top: 90px;
   margin-left: 10px;
 }
-.row h4 {
+.catalogo-completo .catalogo-fondo h4 {
   font-size: 2.5rem;
   font-weight: 200;
   margin-top: 20px;
   margin-bottom: 50px;
+  margin-left: 30px;
 }
-.row .card {
-  width: 75%;
+.catalogo-completo .catalogo-fondo .articulo {
+  width: 80%;
   border: none;
+  margin-left: 30px;
+  margin-right: 30px;
 }
-.row .card .card-title {
+.catalogo-completo .catalogo-fondo .articulo h5 {
   font-size: 1.8rem;
 }
-.row .card .card-text {
-  font-size: 1.2rem;
+.catalogo-completo .catalogo-fondo .articulo p {
+  font-size: 1.3rem;
 }
 
 body {
@@ -540,53 +540,71 @@ body {
   .nosotros-container .texto3 p {
     font-size: 1rem;
   }
-  /*-------- catalogo mujer------*/
+  /*------------------------------------- catalogo mujer------*/
   .banner-catalogo {
     display: none;
+  }
+  .titulo-h1-catalogo {
+    margin: 0px;
+    height: 50px;
+    padding: 0px;
+  }
+  .titulo-h1-catalogo h1 {
+    font-size: 2rem;
+    margin: opx;
   }
   .titulo-catalogo {
     display: none;
   }
-  .titulo-h1-catalogo {
-    margin-top: 20px;
+  .catalogo-completo {
+    margin: 0px;
   }
-  .titulo-h1-catalogo h1 {
-    font-size: 2.5rem;
-  }
-  .col-3 {
+  .catalogo-completo .catalogo-filtro {
     width: 100%;
-  }
-  .col-3 a {
-    align-items: center;
-  }
-  .col-9 {
-    width: 100%;
-    align-items: center;
-  }
-  /* lo de abajo no sirve para nada*/
-  .catalogo-filtro {
-    display: flex;
-    flex-direction: row;
-  }
-  .catalogo-filtro .filtro {
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+    border-color: black;
     position: sticky;
+    top: 80px;
+    z-index: 5;
+  }
+  .catalogo-completo .catalogo-filtro .filtro {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    margin: 20px;
     top: 120px;
   }
-  .catalogo-fondo {
+  .catalogo-completo .catalogo-filtro .filtro .categoria {
+    font-size: 1rem;
+    font-weight: 200;
+    margin-top: 0px;
+    margin: 0px;
     align-items: center;
+    background-color: white;
   }
-  /* hasta aca*/
-  .list-group {
-    flex-direction: row;
+  .catalogo-completo .catalogo-filtro a {
+    background-color: white;
+  }
+  .catalogo-completo .catalogo-fondo {
+    width: 100%;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+  }
+  .catalogo-completo .catalogo-fondo .categoria-cards {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .catalogo-completo .catalogo-fondo .articulo {
+    width: 85%;
+    margin: 0px 0px 0px 10px;
     padding: 0px;
   }
-  .list-group .list-group-item {
-    font-size: 1rem;
-    font-weight: 400;
-  }
-  .list-group .list-group-item-action .active {
-    font-size: 1rem;
-    font-weight: 400;
+  .catalogo-completo .catalogo-fondo .espacio-card {
+    align-items: center;
   }
   /*------------comunidad--------------*/
   .recomendaciones-comunidad {
@@ -624,7 +642,7 @@ body {
     width: 250px;
   }
 }
-@media only screen and (min-width: 499px) and (max-width: 978px) {
+@media only screen and (min-width: 499px) and (max-width: 990px) {
   header .barra-navegacion img {
     width: 80%;
     margin-left: 50px;
@@ -632,7 +650,7 @@ body {
     margin-bottom: 25px;
   }
 }
-@media only screen and (min-width: 979px) {
+@media only screen and (min-width: 991px) {
   header .barra-navegacion {
     height: 100px;
   }
@@ -649,7 +667,7 @@ html {
   font-family: "Inter", sans-serif;
 }
 html h1 {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 600;
 }
 html h2 {

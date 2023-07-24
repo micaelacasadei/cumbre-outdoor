@@ -3,37 +3,37 @@
 @media only screen and (max-width: 500px) {
 
     /*navbar*/
-  
-  header{
+
+    header {
 
 
- .menu-hamburguesa {
-        margin-right: 50px;
-        border: 1px solid;
+        .menu-hamburguesa {
+            margin-right: 50px;
+            border: 1px solid;
 
 
-    }
-
- .barra-navegacion {
-     
-    .logo-nav {
-
-        width: 50%;
-    }
-
-        img {
-            width: 60%;
-            margin-left: 10px;
-            margin-top: 25px;
-            margin-bottom: 25px;
-        
         }
 
+        .barra-navegacion {
+
+            .logo-nav {
+
+                width: 50%;
+            }
+
+            img {
+                width: 60%;
+                margin-left: 10px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+
+            }
+
+
+        }
 
     }
 
-  }
-   
 
 
 
@@ -86,11 +86,12 @@
 
     /*----destacados-----------*/
 
-    .carrousel-index-1{
-        h1{
+    .carrousel-index-1 {
+        h1 {
             font-size: 1rem;
         }
     }
+
     .destacados {
         h2 {
             font-size: 2.3rem;
@@ -215,80 +216,106 @@
 
     }
 
-    /*-------- catalogo mujer------*/
+    /*------------------------------------- catalogo mujer------*/
 
     .banner-catalogo {
+        //height: 100px;
+        //margin-bottom: 0px;
         display: none;
-    }
+ }
+        .titulo-h1-catalogo {
+            margin: 0px;
+            //margin-bottom: 15px;
+    
+            height: 50px;
+            h1 {
+                font-size: 2rem;
+                margin: opx;
+    
+            }
+            padding: 0px;
+            //background-color: $cumbre-beige;
+        }
+   
 
     .titulo-catalogo {
         display: none;
     }
 
-    .titulo-h1-catalogo {
-        margin-top: 20px;
-        h1{font-size: 2.5rem;}
-    }
+ 
 
-    .col-3 {
-        width: 100%;
+    .catalogo-completo {
 
-        a {
-            align-items: center;
-        }
+       margin: 0px;
 
-
-    }
-
-    .col-9 {
-        width: 100%;
-        align-items: center;
-    }
-
-/* lo de abajo no sirve para nada*/
-
-    .catalogo-filtro {
-
-
-        display: flex;
-        flex-direction: row;
-
-        .filtro{
+        .catalogo-filtro {
+           width: 100%;
+            padding: 0px;
+            margin: 0px;
+            background-color: white;
+            border-color: black;
             position: sticky;
-            top:120px
-        }
+            top: 80px;
+            z-index: 5;
 
-    }
+            .filtro {
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 0px;
+                margin: 20px;
+                top: 120px;
+              
 
-    
-    .catalogo-fondo {
+                .categoria {
+                    font-size: 1rem;
+                    font-weight: 200;
+                    margin-top: 0px;
+                    margin: 0px;
+                    align-items: center;
+                    background-color: white;
+                    
+                   
+                }
 
-        align-items: center;
-
-    }
-
-
- /* hasta aca*/
-
-    .list-group {
-
-        flex-direction: row;
-        padding: 0px;
-
-        .list-group-item {
-            font-size: 1rem;
-            font-weight: 400;
-        }
-
-        .list-group-item-action {
-            .active {
-                font-size: 1rem;
-                font-weight: 400;
             }
+
+            a {
+                background-color: white;
+                //align-items: center; 
+                
+            }
+
+
         }
 
+        .catalogo-fondo {
+            width: 100%;
+            align-items: center;
+            padding: 0px;
+            margin: 0px;
+
+            .categoria-cards{
+                width: 100%;
+                margin-left: 0px;
+            }
+
+            .articulo{
+                width: 85%;
+                margin: 0px 0px 0px 10px;
+                padding: 0px;
+            }
+
+            
+        .espacio-card {
+            align-items: center;
+            
+           
+        }
+        }
 
     }
+
 
 
     /*------------comunidad--------------*/
@@ -364,25 +391,25 @@
 }
 
 //tablet
-@media only screen and (min-width: 499px) and (max-width: 978px) {
+@media only screen and (min-width: 499px) and (max-width: 990px) {
 
-    header{
+    header {
         .barra-navegacion {
-            
-       
-               img {
-                   width: 80%;
-                   margin-left: 50px;
-                   margin-top: 25px;
-                   margin-bottom: 25px;
-               
-               }
-       
-       
-           }
-       
-         }
-          
+
+
+            img {
+                width: 80%;
+                margin-left: 50px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+
+            }
+
+
+        }
+
+    }
+
 
 
 
@@ -393,7 +420,7 @@
 
 //version desktop
 
-@media only screen and (min-width: 979px) {
+@media only screen and (min-width: 991px) {
 
     header {
 
@@ -403,6 +430,6 @@
 
         }
 
-       
+
     }
 }
