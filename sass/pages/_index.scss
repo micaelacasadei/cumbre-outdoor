@@ -1,36 +1,90 @@
-body{
+body {
     background-color: $cumbre-beige;
 }
 
 /*carousel*/
-   
-    .carrousel-index-1 {
 
-        h1 {
-            font-size: 7rem;
-        }
-        p{
-            font-size: 3rem;
+.carrousel-index-1 {
+
+    h1 {
+        font-size: 7rem;
+
+    }
+
+    p {
+        font-size: 3rem;
+    }
+
+    text-shadow: 1px 4px 12px rgba(77, 76, 76, 0.96);
+
+}
+
+.carrousel-index-2 {
+    h2 {
+        font-size: 5rem;
+    }
+
+    p {
+        font-size: 3rem;
+    }
+
+    text-shadow: 1px 4px 12px rgba(77, 76, 76, 0.96);
+}
+
+.carrousel-index-3 {
+    h2 {
+        font-size: 5rem;
+    }
+
+    p {
+        font-size: 3rem;
+    }
+
+    //text-shadow: 1px 4px 12px rgba(255,255,255,0.6);
+    text-shadow: 1px 4px 12px rgba(77, 76, 76, 0.96);
+}
+
+
+
+/*-------------------destacados-1*/
+
+.destacados-1 {
+    text-align: center;
+
+    h2 {
+        display: inline;
+        padding: 20px;
+
+    }
+
+    background-color: white;
+    margin: 30px;
+
+    .articulos-destacados {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+
+
+        .card-1 {
+            border: none;
+
+            h5 {
+                color: black;
+            }
+
+            margin: 30px;
+            width: 20%;
+
+            img {
+                width: 100%;
+            }
         }
     }
 
-    .carrousel-index-2{
-        h2 {
-            font-size: 5rem;
-        }
-        p{
-            font-size: 3rem;
-        }
-    }
-
-    .carrousel-index-3{
-        h2 {
-            font-size: 5rem;
-        }
-        p{
-            font-size: 3rem;
-        }
-    }
+}
 
 
 
@@ -39,11 +93,16 @@ body{
 
 .destacados {
     text-align: center;
-    
+    background-color: white;
+    margin: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
 
     h2 {
         color: #141414;
-        margin: 50px;
+        margin: 30px;
+
 
     }
 
@@ -58,10 +117,17 @@ body{
             flex-direction: column;
             align-items: center;
 
+
+
             img {
+cursor: zoom-in;
+                /* borde redondeado*/
                 width: 90%;
+                border-radius: 10px 10px 10px 10px;
+                -webkit-border-radius: 10px 10px 10px 10px;
+                -moz-border-radius: 10px 10px 10px 10px;
             }
-           
+
 
             a {
                 font-size: 1.5rem;
@@ -71,10 +137,25 @@ body{
                 padding-bottom: 30px;
 
             }
-            
+
         }
 
-        
+        .productoDestacado :hover {
+
+            
+
+            /* escalar*/
+            // transform: scale(1.1);
+            // -webkit-transform: scale(1.1);
+            // -moz-transform: scale(1.1);
+
+            /*sombra*/
+           box-shadow: -1px 2px 7px 3px rgba(191,186,186,0.75);
+-webkit-box-shadow: -1px 2px 7px 3px rgba(191,186,186,0.75);
+-moz-box-shadow: -1px 2px 7px 3px rgba(191,186,186,0.75);
+        }
+
+
     }
 }
 
@@ -91,7 +172,7 @@ body{
         color: antiquewhite;
         padding-bottom: 15px;
         margin-bottom: 20px;
-        
+
     }
 
 }
@@ -120,25 +201,25 @@ body{
         background-color: white;
         width: 300px;
         text-align: center;
-        
-        h5{
+
+        h5 {
             font-size: 2rem;
             margin-top: 20px;
             margin-bottom: 20px;
         }
 
-        a{
+        a {
             font-size: 1.5rem;
             text-decoration: none;
             color: #575555;
-            
+
         }
 
         img {
             width: 300px;
         }
 
-      
+
 
 
     }
@@ -157,5 +238,5 @@ body{
 
     }
 
-    
+
 }

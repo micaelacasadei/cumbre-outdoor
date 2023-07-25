@@ -219,53 +219,68 @@
     /*------------------------------------- catalogo mujer------*/
 
     .banner-catalogo {
-        //height: 100px;
-        //margin-bottom: 0px;
-        display: none;
- }
-        .titulo-h1-catalogo {
-            margin: 0px;
-            //margin-bottom: 15px;
-    
-            height: 50px;
-            h1 {
-                font-size: 2rem;
-                margin: opx;
-    
-            }
-            padding: 0px;
-            //background-color: $cumbre-beige;
+        height: 100px;
+        margin-bottom: 0px;
+        
+    }
+
+    .titulo-h1-catalogo {
+        margin: 0px;
+        //margin-bottom: 15px;
+
+        height: 50px;
+
+        h1 {
+            font-size: 2rem;
+            margin-top: 87px;
+
         }
-   
+
+        padding: 0px;
+        //background-color: $cumbre-beige;
+    }
+
 
     .titulo-catalogo {
         display: none;
     }
 
- 
+
 
     .catalogo-completo {
 
-       margin: 0px;
+        margin: 0px;
 
         .catalogo-filtro {
-           width: 100%;
+            width: 100%;
             padding: 0px;
             margin: 0px;
-            background-color: white;
-            border-color: black;
+            background-color: white ;
+          //  border-top: 1px solid #bdbaba;
+           // border-bottom: 1px solid #bdbaba;
             position: sticky;
             top: 80px;
             z-index: 5;
 
-            .filtro {
+            // background: rgba(245,245,220,0.87);
+            // background: linear-gradient(90deg,rgba(245,245,220,0.87) 50%, rgba(245,245,220,0.87) 50%);
+            // background: -webkit-linear-gradient(90deg,rgba(245,245,220,0.87) 50%, rgba(245,245,220,0.87) 50%);
+            // background: -moz-linear-gradient(90deg,rgba(245,245,220,0.87) 50%, rgba(245,245,220,0.87) 50%);
+
+            background: #f5f5dc;
+            background: linear-gradient(270deg,#f5f5dc 0%, rgba(255,255,255,0.94) 90%);
+            background: -webkit-linear-gradient(270deg,#f5f5dc 0%, rgba(255,255,255,0.94) 90%);
+            background: -moz-linear-gradient(270deg,#f5f5dc 0%, rgba(255,255,255,0.94) 90%);
+
+              .filtro {
                 flex-direction: row;
                 justify-content: flex-start;
                 align-items: center;
                 padding: 0px;
                 margin: 20px;
                 top: 120px;
-              
+
+               
 
                 .categoria {
                     font-size: 1rem;
@@ -273,9 +288,9 @@
                     margin-top: 0px;
                     margin: 0px;
                     align-items: center;
-                    background-color: white;
-                    
-                   
+                    background-color: transparent;
+
+
                 }
 
             }
@@ -283,7 +298,7 @@
             a {
                 background-color: white;
                 //align-items: center; 
-                
+
             }
 
 
@@ -295,23 +310,23 @@
             padding: 0px;
             margin: 0px;
 
-            .categoria-cards{
+            .categoria-cards {
                 width: 100%;
                 margin-left: 0px;
             }
 
-            .articulo{
+            .articulo {
                 width: 85%;
                 margin: 0px 0px 0px 10px;
                 padding: 0px;
             }
 
-            
-        .espacio-card {
-            align-items: center;
-            
-           
-        }
+
+            .espacio-card {
+                align-items: center;
+
+
+            }
         }
 
     }

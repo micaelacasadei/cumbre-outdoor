@@ -5,6 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&display=swap');*/
 @import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&family=Rock+Salt&display=swap");
 header {
+  /*sombra de navbar*/
+  box-shadow: 0px 13px 10px -9px rgba(212, 201, 201, 0.67);
+  -webkit-box-shadow: 0px 13px 10px -9px rgba(212, 201, 201, 0.67);
+  -moz-box-shadow: 0px 13px 10px -9px rgba(212, 201, 201, 0.67);
   position: sticky;
   z-index: 10;
   top: 0%;
@@ -14,7 +18,7 @@ header .menu-hamburguesa {
   border: 1px solid;
 }
 header .barra-navegacion {
-  background-color: rgb(100, 146, 78);
+  background-color: rgb(255, 255, 255);
   align-items: center;
 }
 header .barra-navegacion .logo-nav img {
@@ -68,6 +72,9 @@ body {
 }
 
 /*carousel*/
+.carrousel-index-1 {
+  text-shadow: 1px 4px 12px rgba(77, 76, 76, 0.96);
+}
 .carrousel-index-1 h1 {
   font-size: 7rem;
 }
@@ -75,6 +82,9 @@ body {
   font-size: 3rem;
 }
 
+.carrousel-index-2 {
+  text-shadow: 1px 4px 12px rgba(77, 76, 76, 0.96);
+}
 .carrousel-index-2 h2 {
   font-size: 5rem;
 }
@@ -82,6 +92,9 @@ body {
   font-size: 3rem;
 }
 
+.carrousel-index-3 {
+  text-shadow: 1px 4px 12px rgba(77, 76, 76, 0.96);
+}
 .carrousel-index-3 h2 {
   font-size: 5rem;
 }
@@ -89,13 +102,44 @@ body {
   font-size: 3rem;
 }
 
+/*-------------------destacados-1*/
+.destacados-1 {
+  text-align: center;
+  background-color: white;
+  margin: 30px;
+}
+.destacados-1 h2 {
+  display: inline;
+  padding: 20px;
+}
+.destacados-1 .articulos-destacados {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.destacados-1 .articulos-destacados .card-1 {
+  border: none;
+  margin: 30px;
+  width: 20%;
+}
+.destacados-1 .articulos-destacados .card-1 h5 {
+  color: black;
+}
+.destacados-1 .articulos-destacados .card-1 img {
+  width: 100%;
+}
+
 /*-------------------destacados*/
 .destacados {
   text-align: center;
+  background-color: white;
+  margin: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .destacados h2 {
   color: #141414;
-  margin: 50px;
+  margin: 30px;
 }
 .destacados .filaDestacados {
   display: flex;
@@ -109,7 +153,12 @@ body {
   align-items: center;
 }
 .destacados .filaDestacados .productoDestacado img {
+  cursor: zoom-in;
+  /* borde redondeado*/
   width: 90%;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
 }
 .destacados .filaDestacados .productoDestacado a {
   font-size: 1.5rem;
@@ -117,6 +166,13 @@ body {
   color: #141414;
   padding-top: 15px;
   padding-bottom: 30px;
+}
+.destacados .filaDestacados .productoDestacado :hover {
+  /* escalar*/
+  /*sombra*/
+  box-shadow: -1px 2px 7px 3px rgba(191, 186, 186, 0.75);
+  -webkit-box-shadow: -1px 2px 7px 3px rgba(191, 186, 186, 0.75);
+  -moz-box-shadow: -1px 2px 7px 3px rgba(191, 186, 186, 0.75);
 }
 
 /*--------------musica*/
@@ -251,16 +307,13 @@ body {
   background-size: cover;
   background-position-y: center;
   margin-bottom: 30px;
-  display: grid;
-  grid-template-columns: 25% 75%;
-  align-items: center;
+}
+.banner-catalogo .titulo-h1-catalogo h1 {
+  margin-top: 130px;
+  text-align: center;
+  display: inline;
 }
 
-.titulo-h1-catalogo {
-  width: 100%;
-  text-align: center;
-  margin-top: 230px;
-}
 .catalogo-completo .catalogo-filtro {
   width: 20%;
   margin-right: 40px;
@@ -542,7 +595,8 @@ body {
   }
   /*------------------------------------- catalogo mujer------*/
   .banner-catalogo {
-    display: none;
+    height: 100px;
+    margin-bottom: 0px;
   }
   .titulo-h1-catalogo {
     margin: 0px;
@@ -551,7 +605,7 @@ body {
   }
   .titulo-h1-catalogo h1 {
     font-size: 2rem;
-    margin: opx;
+    margin-top: 87px;
   }
   .titulo-catalogo {
     display: none;
@@ -564,10 +618,13 @@ body {
     padding: 0px;
     margin: 0px;
     background-color: white;
-    border-color: black;
     position: sticky;
     top: 80px;
     z-index: 5;
+    background: #f5f5dc;
+    background: linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
+    background: -webkit-linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
+    background: -moz-linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
   }
   .catalogo-completo .catalogo-filtro .filtro {
     flex-direction: row;
@@ -583,7 +640,7 @@ body {
     margin-top: 0px;
     margin: 0px;
     align-items: center;
-    background-color: white;
+    background-color: transparent;
   }
   .catalogo-completo .catalogo-filtro a {
     background-color: white;
