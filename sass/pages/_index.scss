@@ -48,44 +48,82 @@ body {
 
 /*-------------------destacados-1*/
 
-.destacados-1 {
-    text-align: center;
+// .destacados-1 {
+//     text-align: center;
 
-    h2 {
-        display: inline;
-        padding: 20px;
+//     h2 {
+//         display: inline;
+//         padding: 20px;
 
-    }
+//     }
 
-    background-color: white;
-    margin: 30px;
+//     background-color: white;
+//     margin: 30px;
 
-    .articulos-destacados {
+//     .articulos-destacados {
 
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-around;
 
 
 
-        .card-1 {
-            border: none;
+//         .card-1 {
+//             border: none;
 
-            h5 {
-                color: black;
+//             h5 {
+//                 color: black;
+//             }
+
+//             margin: 30px;
+//             width: 20%;
+
+//             img {
+//                 width: 100%;
+//             }
+//         }
+//     }
+
+// }
+
+
+/*acceso a catalogos*/
+
+.acceso-catalogo-inicio{
+
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin: 50px;
+
+    .acceso-tipo{
+       width: 30%;
+        align-items: center;
+        
+        .titulo-card{
+            h5{
+               text-decoration: none; 
             }
-
-            margin: 30px;
-            width: 20%;
-
-            img {
-                width: 100%;
-            }
+             
         }
+       h5{
+        font-size: 2rem;
+       
+        text-align: center;
+       }
+
+       img{
+        padding-bottom: 10px;
+       }
+       .boton-catalogo{
+        font-size: 1.5rem;
+       padding: 10px;
+       background-color: red;
+       
+       }
+       
     }
-
 }
-
 
 
 /*-------------------destacados*/
@@ -93,10 +131,13 @@ body {
 
 .destacados {
     text-align: center;
-    background-color: white;
-    margin: 40px;
+    background-image: url(../medios/fondo-montanias.jpg);
+    background-size: cover;
+    //background-color: white;
+    //ssmargin: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-bottom: 20px;
 
 
     h2 {
@@ -120,7 +161,8 @@ body {
 
 
             img {
-cursor: zoom-in;
+                //cursor: zoom-in;
+                
                 /* borde redondeado*/
                 width: 90%;
                 border-radius: 10px 10px 10px 10px;
@@ -140,7 +182,7 @@ cursor: zoom-in;
 
         }
 
-        .productoDestacado :hover {
+        // .productoDestacado :hover {
 
             
 
@@ -150,10 +192,10 @@ cursor: zoom-in;
             // -moz-transform: scale(1.1);
 
             /*sombra*/
-           box-shadow: -1px 2px 7px 3px rgba(191,186,186,0.75);
--webkit-box-shadow: -1px 2px 7px 3px rgba(191,186,186,0.75);
--moz-box-shadow: -1px 2px 7px 3px rgba(191,186,186,0.75);
-        }
+//            box-shadow: -1px 2px 7px 3px rgba(191,186,186,0.75);
+// -webkit-box-shadow: -1px 2px 7px 3px rgba(191,186,186,0.75);
+// -moz-box-shadow: -1px 2px 7px 3px rgba(191,186,186,0.75);
+        // }
 
 
     }
@@ -199,7 +241,7 @@ cursor: zoom-in;
     .recomendacion-1 {
         grid-area: recomendacion-1;
         background-color: white;
-        width: 300px;
+        width: 350px;
         text-align: center;
 
         h5 {
@@ -216,7 +258,7 @@ cursor: zoom-in;
         }
 
         img {
-            width: 300px;
+            width: 350px;
         }
 
 

@@ -33,8 +33,12 @@ header .navbar-expand-lg .navbar-collapse .nav-link {
   font-size: 1.8rem;
   margin: 12px;
 }
-header .navbar-expand-lg .navbar-collapse .dropdown.menu .dropdown-item {
-  font-size: 1rem;
+header .navbar-expand-lg .navbar-collapse .desplegable {
+  border: none;
+}
+header .navbar-expand-lg .navbar-collapse .desplegable .item-desplegable {
+  font-size: 1.8rem;
+  padding: 10px;
 }
 header .fuente-desplegable {
   font-size: 2rem;
@@ -103,39 +107,41 @@ body {
 }
 
 /*-------------------destacados-1*/
-.destacados-1 {
-  text-align: center;
-  background-color: white;
-  margin: 30px;
-}
-.destacados-1 h2 {
-  display: inline;
-  padding: 20px;
-}
-.destacados-1 .articulos-destacados {
+/*acceso a catalogos*/
+.acceso-catalogo-inicio {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin: 50px;
 }
-.destacados-1 .articulos-destacados .card-1 {
-  border: none;
-  margin: 30px;
-  width: 20%;
+.acceso-catalogo-inicio .acceso-tipo {
+  width: 30%;
+  align-items: center;
 }
-.destacados-1 .articulos-destacados .card-1 h5 {
-  color: black;
+.acceso-catalogo-inicio .acceso-tipo .titulo-card h5 {
+  text-decoration: none;
 }
-.destacados-1 .articulos-destacados .card-1 img {
-  width: 100%;
+.acceso-catalogo-inicio .acceso-tipo h5 {
+  font-size: 2rem;
+  text-align: center;
+}
+.acceso-catalogo-inicio .acceso-tipo img {
+  padding-bottom: 10px;
+}
+.acceso-catalogo-inicio .acceso-tipo .boton-catalogo {
+  font-size: 1.5rem;
+  padding: 10px;
+  background-color: red;
 }
 
 /*-------------------destacados*/
 .destacados {
   text-align: center;
-  background-color: white;
-  margin: 40px;
+  background-image: url(../medios/fondo-montanias.jpg);
+  background-size: cover;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 .destacados h2 {
   color: #141414;
@@ -146,6 +152,8 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-content: flex-end;
+  /* escalar*/
+  /*sombra*/
 }
 .destacados .filaDestacados .productoDestacado {
   display: flex;
@@ -153,7 +161,6 @@ body {
   align-items: center;
 }
 .destacados .filaDestacados .productoDestacado img {
-  cursor: zoom-in;
   /* borde redondeado*/
   width: 90%;
   border-radius: 10px 10px 10px 10px;
@@ -166,13 +173,6 @@ body {
   color: #141414;
   padding-top: 15px;
   padding-bottom: 30px;
-}
-.destacados .filaDestacados .productoDestacado :hover {
-  /* escalar*/
-  /*sombra*/
-  box-shadow: -1px 2px 7px 3px rgba(191, 186, 186, 0.75);
-  -webkit-box-shadow: -1px 2px 7px 3px rgba(191, 186, 186, 0.75);
-  -moz-box-shadow: -1px 2px 7px 3px rgba(191, 186, 186, 0.75);
 }
 
 /*--------------musica*/
@@ -206,7 +206,7 @@ body {
 .recomendaciones-index .recomendacion-1, .recomendaciones-index .recomendacion-3, .recomendaciones-index .recomendacion-2 {
   grid-area: recomendacion-1;
   background-color: white;
-  width: 300px;
+  width: 350px;
   text-align: center;
 }
 .recomendaciones-index .recomendacion-1 h5, .recomendaciones-index .recomendacion-3 h5, .recomendaciones-index .recomendacion-2 h5 {
@@ -220,7 +220,7 @@ body {
   color: #575555;
 }
 .recomendaciones-index .recomendacion-1 img, .recomendaciones-index .recomendacion-3 img, .recomendaciones-index .recomendacion-2 img {
-  width: 300px;
+  width: 350px;
 }
 .recomendaciones-index .recomendacion-2 {
   grid-area: recomendacion-2;
@@ -232,14 +232,14 @@ body {
 body {
   background-color: #EEF3F7;
 }
-body h1 {
-  margin-top: 20px;
-  padding-bottom: 0px;
-  text-align: center;
-}
 
 .banner-nosotros {
   width: 100%;
+}
+.banner-nosotros h1 {
+  margin-top: 20px;
+  padding-bottom: 0px;
+  text-align: center;
 }
 
 .nosotros-container {
@@ -307,10 +307,15 @@ body {
   background-size: cover;
   background-position-y: center;
   margin-bottom: 30px;
+  text-align: center;
+}
+.banner-catalogo .titulo-h1-catalogo {
+  padding-top: 230px;
 }
 .banner-catalogo .titulo-h1-catalogo h1 {
-  margin-top: 130px;
+  color: white;
   text-align: center;
+  text-shadow: 1px 4px 12px rgba(77, 76, 76, 0.96);
   display: inline;
 }
 
@@ -522,21 +527,48 @@ body {
     margin: 10px;
   }
   /* ------------- index--------------------*/
-  /*----destacados-----------*/
-  .carrousel-index-1 {
-    height: 450px;
+  .carrousel-index-1 img {
+    height: 80%;
   }
   .carrousel-index-1 h1 {
     font-size: 1rem;
   }
+  /*-----acceso a catalogos index------------*/
+  .acceso-catalogo-inicio {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+  }
+  .acceso-catalogo-inicio .acceso-tipo {
+    width: 80%;
+    margin: 20px;
+  }
+  /*----destacados-----------*/
   .destacados h2 {
     font-size: 2.3rem;
     margin: 30px;
   }
+  .destacados .destacados {
+    margin: 0px;
+  }
   .destacados .filaDestacados {
-    flex-direction: column;
+    display: grid;
+    grid-template-areas: "destacados-1   destacados-2" "destacados-3   destacados-4";
     align-content: space-around;
     justify-content: center;
+  }
+  .destacados .filaDestacados .destacados-1 {
+    grid-area: destacados-1;
+  }
+  .destacados .filaDestacados .destacados-2 {
+    grid-area: destacados-2;
+  }
+  .destacados .filaDestacados .destacados-3 {
+    grid-area: destacados-3;
+  }
+  .destacados .filaDestacados .destacados-4 {
+    grid-area: destacados-4;
   }
   /*------musica----*/
   .musica h2 {
@@ -598,15 +630,13 @@ body {
   }
   /*------------------------------------- catalogo mujer------*/
   .banner-catalogo {
-    height: 100px;
-    margin-bottom: 0px;
-  }
-  .titulo-h1-catalogo {
+    height: 150px;
     margin: 0px;
-    height: 50px;
-    padding: 0px;
   }
-  .titulo-h1-catalogo h1 {
+  .banner-catalogo .titulo-h1-catalogo {
+    padding-top: 100px;
+  }
+  .banner-catalogo .titulo-h1-catalogo h1 {
     font-size: 2rem;
   }
   .titulo-catalogo {
@@ -623,7 +653,7 @@ body {
     position: sticky;
     top: 80px;
     z-index: 5;
-    background: #f5f5dc;
+    background: #EEF3F7;
     background: linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
     background: -webkit-linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
     background: -moz-linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
@@ -652,6 +682,10 @@ body {
     align-items: center;
     padding: 0px;
     margin: 0px;
+  }
+  .catalogo-completo .catalogo-fondo .titulo-categoria h5 {
+    font-size: 2rem;
+    padding-left: 15px;
   }
   .catalogo-completo .catalogo-fondo .categoria-cards {
     width: 100%;
@@ -712,6 +746,11 @@ body {
 @media only screen and (min-width: 991px) {
   header .barra-navegacion {
     height: 100px;
+  }
+  /*-----catalogo mujer------*/
+  /*titulo de la pagina*/
+  .titulo-h1-catalogo-mobile {
+    display: none;
   }
 }
 /*--------------------html general------------------------------*/

@@ -84,17 +84,39 @@
 
     /* ------------- index--------------------*/
 
-    /*----destacados-----------*/
+
 
     .carrousel-index-1 {
 
-        height: 450px;
-        
+        //height: 450px;
+        img {
+            height: 80%;
+        }
+
         h1 {
             font-size: 1rem;
         }
     }
 
+    /*-----acceso a catalogos index------------*/
+
+    .acceso-catalogo-inicio {
+        flex-direction: column;
+        //align-content: space-around;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+
+        .acceso-tipo {
+            width: 80%;
+            margin: 20px;
+        }
+
+
+    }
+
+
+    /*----destacados-----------*/
     .destacados {
         h2 {
             font-size: 2.3rem;
@@ -102,8 +124,44 @@
         }
 
 
+        // .filaDestacados {
+        //     flex-direction: column;
+
+        //     align-content: space-around;
+        //     justify-content: center;
+
+        // }
+
+        .destacados {
+            margin: 0px;
+
+
+
+
+        }
+
         .filaDestacados {
-            flex-direction: column;
+            display: grid;
+            grid-template-areas:
+                "destacados-1   destacados-2"
+                "destacados-3   destacados-4";
+
+            .destacados-1 {
+                grid-area: destacados-1;
+            }
+
+            .destacados-2 {
+                grid-area: destacados-2;
+            }
+
+            .destacados-3 {
+                grid-area: destacados-3;
+            }
+
+            .destacados-4 {
+                grid-area: destacados-4;
+            }
+
             align-content: space-around;
             justify-content: center;
 
@@ -222,26 +280,27 @@
     /*------------------------------------- catalogo mujer------*/
 
     .banner-catalogo {
-        height: 100px;
-        margin-bottom: 0px;
-        
-    }
+       height: 150px;
+       margin: 0px;
 
-    .titulo-h1-catalogo {
-        margin: 0px;
-        //margin-bottom: 15px;
+.titulo-h1-catalogo {
+        padding-top: 100px;
 
-        height: 50px;
+        //height: 150px;
 
         h1 {
             font-size: 2rem;
-            
+
 
         }
 
-        padding: 0px;
+        //padding: 0px;
         //background-color: $cumbre-beige;
     }
+
+    }
+
+    
 
 
     .titulo-catalogo {
@@ -258,9 +317,9 @@
             width: 100%;
             padding: 0px;
             margin: 0px;
-            background-color: white ;
-          //  border-top: 1px solid #bdbaba;
-           // border-bottom: 1px solid #bdbaba;
+            background-color: white;
+            //  border-top: 1px solid #bdbaba;
+            // border-bottom: 1px solid #bdbaba;
             position: sticky;
             top: 80px;
             z-index: 5;
@@ -270,12 +329,12 @@
             // background: -webkit-linear-gradient(90deg,rgba(245,245,220,0.87) 50%, rgba(245,245,220,0.87) 50%);
             // background: -moz-linear-gradient(90deg,rgba(245,245,220,0.87) 50%, rgba(245,245,220,0.87) 50%);
 
-            background: #f5f5dc;
-            background: linear-gradient(270deg,#f5f5dc 0%, rgba(255,255,255,0.94) 90%);
-            background: -webkit-linear-gradient(270deg,#f5f5dc 0%, rgba(255,255,255,0.94) 90%);
-            background: -moz-linear-gradient(270deg,#f5f5dc 0%, rgba(255,255,255,0.94) 90%);
+            background: $cumbre-beige;
+            background: linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
+            background: -webkit-linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
+            background: -moz-linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
 
-              .filtro {
+            .filtro {
                 flex-direction: row;
                 justify-content: flex-start;
                 align-items: center;
@@ -283,7 +342,7 @@
                 margin: 20px;
                 top: 120px;
 
-               
+
 
                 .categoria {
                     font-size: 1rem;
@@ -312,6 +371,14 @@
             align-items: center;
             padding: 0px;
             margin: 0px;
+
+            .titulo-categoria{
+               h5{
+                font-size: 2rem;
+                padding-left: 15px;
+               }
+                
+            }
 
             .categoria-cards {
                 width: 100%;
@@ -450,4 +517,12 @@
 
 
     }
+
+
+    /*-----catalogo mujer------*/
+/*titulo de la pagina*/
+.titulo-h1-catalogo-mobile{
+    display: none;
+}
+
 }

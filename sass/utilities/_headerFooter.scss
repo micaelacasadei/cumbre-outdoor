@@ -61,10 +61,16 @@
                 margin: 12px;
             }
 
-            .dropdown.menu {
-                .dropdown-item {
+            .desplegable{
 
-                    font-size: 1rem;
+               
+                
+                border: none;
+
+                .item-desplegable {
+
+                    font-size: 1.8rem;
+                    padding: 10px;
                 }
             }
         }

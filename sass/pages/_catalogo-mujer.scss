@@ -9,14 +9,17 @@ body {
     background-size: cover;
     background-position-y: center;
     margin-bottom: 30px;
+    text-align: center;
 
     .titulo-h1-catalogo {
        
-        
+        padding-top: 230px; 
 
         h1{
-           margin-top: 130px; 
+           color: white;
             text-align: center;
+            text-shadow: 1px 4px 12px rgba(77, 76, 76, 0.96);
+
        
         display: inline;
         }

@@ -17,11 +17,11 @@
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
 
-  
 
 
-   <!-- link css conectado sass-->
-   <link rel="stylesheet" href="css/estilos.css">
+
+  <!-- link css conectado sass-->
+  <link rel="stylesheet" href="css/estilos.css">
 
 </head>
 
@@ -33,11 +33,13 @@
 
 
     <!---------------------------------menu--------------------------------->
-    <nav class="navbar navbar-expand-lg barra-navegacion " >
+    <nav class="navbar navbar-expand-lg barra-navegacion ">
       <div class="container-fluid ">
         <a class="navbar-brand logo-nav" href="#">
           <img class="logo-nav" src="medios/Cumbre Outdoor.png" alt="Cumbre-Outdoor"></a>
-        <button class="navbar-toggler opciones-menu menu-hamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler opciones-menu menu-hamburguesa" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon "></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -45,17 +47,18 @@
             <li class="nav-item">
               <a class="nav-link active opcion-nav" aria-current="page" href="#">Inicio</a>
             </li>
-           
+
             <li class="nav-item">
               <a class="nav-link" href="page/nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
                 Colección </a>
-              <ul class="dropdown-menu  ">
-                <li><a class="dropdown-item fuente-desplegable" href="page/catalogo-mujer.html">Catálogo mujer</a></li>
-                <li><a class="dropdown-item fuente-desplegable" href="#">Catálogo hombre</a></li>
-                <li><a class="dropdown-item fuente-desplegable" href="#">Catálogo niño here</a></li>
+              <ul class="dropdown-menu desplegable">
+                <li><a class="dropdown-item fuente-desplegable item-desplegable" href="page/catalogo-mujer.html">Catálogo mujer</a></li>
+                <li><a class="dropdown-item fuente-desplegable item-desplegable" href="#">Catálogo hombre</a></li>
+                <li><a class="dropdown-item fuente-desplegable item-desplegable" href="#">Catálogo niño</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -124,8 +127,8 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-<!--ARTICULOS DESTACADOS opcion 1-->
-<!-- 
+    <!--ARTICULOS DESTACADOS opcion 1-->
+    <!-- 
 <section class="destacados-1">
 
   <h2>Artículos destacados</h2>
@@ -167,7 +170,44 @@
 </section> -->
 
 
+    <!--HOMBRE MUJER NIÑO-->
 
+
+    <section class="acceso-catalogo-inicio">
+
+
+      
+      <div class="card acceso-tipo">
+        <a href="page/catalogo-mujer.html" >
+        <img src="medios/mujer2-ia.jpg" class="card-img-top" alt="Mujer haciendo trekking en la montaña">
+        <div class="card-body">
+          <h5 class="card-title titulo-card">Catálogo mujer</h5>
+        </div>
+      </a>
+      </div>
+     
+
+      <div class="card acceso-tipo">
+        <img src="medios/hombre-ia.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <!-- <h5 class="card-title">Catálogo hombre</h5> -->
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          <a href="#" class="btn btn-primary boton-catalogo">Catálogo hombre</a>
+        </div>
+      </div>
+
+      <div class="card acceso-tipo">
+        <img src="medios/niño-ia.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Catálogo niño</h5>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+
+
+
+    </section>
 
 
 
@@ -179,24 +219,29 @@
       <h2>Artículos destacados</h2>
 
       <div class="filaDestacados">
-        <div class="productoDestacado">
-         
-          <!--enlace a catalogo al producto-->
-          <a href="page/catalogo.html"> 
-             <img src="medios/camperaNieve.jpg" alt="Campera de nieve dama">
-             </a>
+        <div class="productoDestacado destacados-1">
+          <img src="medios/buzoMicropolarDama.jpg" alt="Buzo de micropolar dama">
+          <!-- enlace a catalogo al producto-->
+          <a href="page/catalogo.html"> Campera en micropolar de mujer </a>
 
         </div>
 
-        <div class="productoDestacado">
-          <img src="medios/buzoMicropolarDama.jpg" alt="Buzo de micropolar dama">
+        <div class="productoDestacado destacados-2">
+          <img src="medios/camperaHombre1.jpg" alt="Campera de plumas hombre">
+          <!-- enlace a catalogo al producto-->
+          <a href="page/catalogo.html"> Campera hombre </a>
+
+        </div>
+
+        <div class="productoDestacado destacados-3">
+          <img src="medios/camperaMicropolarDama.jpg" alt="Campera micropolar dama">
           <!-- enlace a catalogo al producto-->
           <a href="page/catalogo.html"> Ver producto </a>
 
         </div>
 
-        <div class="productoDestacado">
-          <img src="medios/camperaMicropolarDama.jpg" alt="Campera micropolar dama">
+        <div class="productoDestacado destacados-4">
+          <img src="medios/buzoMicropolarDama.jpg" alt="Buzo de micropolar dama">
           <!-- enlace a catalogo al producto-->
           <a href="page/catalogo.html"> Ver producto </a>
 
@@ -227,7 +272,7 @@
 
 
     <h2 class="recomendaciones-titulo">Recomendaciones</h2>
-    
+
     <section class="recomendaciones-index">
 
 
@@ -264,7 +309,7 @@
     </section>
 
 
-   
+
 
 
 
@@ -272,7 +317,7 @@
 
   <footer>
 
-   
+
 
     <div class="redes">
 
@@ -282,9 +327,9 @@
 
     </div>
 
-     <p class="nombre  ">Micaela Casadei 2023</p>
+    <p class="nombre  ">Micaela Casadei 2023</p>
 
-   
+
 
   </footer>
 
