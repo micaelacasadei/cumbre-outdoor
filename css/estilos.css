@@ -34,7 +34,7 @@ header .navbar-expand-lg .navbar-collapse .nav-link {
   margin: 12px;
 }
 header .navbar-expand-lg .navbar-collapse .desplegable {
-  border: none;
+  border: rgb(219, 217, 217) solid 0.3px;
 }
 header .navbar-expand-lg .navbar-collapse .desplegable .item-desplegable {
   font-size: 1.8rem;
@@ -234,12 +234,19 @@ body {
 }
 
 .banner-nosotros {
-  width: 100%;
+  background-image: url(../medios/banner-nosotros.jpg);
+  height: 350px;
+  background-size: cover;
+  background-position-y: center;
+  margin-bottom: 30px;
+  text-align: center;
 }
 .banner-nosotros h1 {
-  margin-top: 20px;
+  padding-top: 230px;
   padding-bottom: 0px;
   text-align: center;
+  color: white;
+  text-shadow: 1px 4px 12px rgba(77, 76, 76, 0.96);
 }
 
 .nosotros-container {
@@ -302,7 +309,7 @@ body {
 }
 
 .banner-catalogo {
-  background-image: url(../medios/carousel1\ 1.jpg);
+  background-image: url(../medios/carousel-m1.jpg);
   height: 350px;
   background-size: cover;
   background-position-y: center;
@@ -742,16 +749,86 @@ body {
     margin-top: 25px;
     margin-bottom: 25px;
   }
+  header .barra-navegacion .desplegable {
+    margin-left: 90px;
+    width: 95%;
+  }
+  /*------------------------------------- catalogo mujer------*/
+  .banner-catalogo {
+    height: 150px;
+    margin: 0px;
+  }
+  .banner-catalogo .titulo-h1-catalogo {
+    padding-top: 100px;
+  }
+  .banner-catalogo .titulo-h1-catalogo h1 {
+    font-size: 2rem;
+  }
+  .titulo-catalogo {
+    display: none;
+  }
+  .catalogo-completo {
+    margin: 0px;
+  }
+  .catalogo-completo .catalogo-filtro {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+    position: sticky;
+    top: 80px;
+    z-index: 5;
+    background: #EEF3F7;
+    background: linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
+    background: -webkit-linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
+    background: -moz-linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
+  }
+  .catalogo-completo .catalogo-filtro .filtro {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    margin: 20px;
+    top: 120px;
+  }
+  .catalogo-completo .catalogo-filtro .filtro .categoria {
+    font-size: 1rem;
+    font-weight: 200;
+    margin-top: 0px;
+    margin: 0px;
+    align-items: center;
+    background-color: transparent;
+  }
+  .catalogo-completo .catalogo-filtro a {
+    background-color: white;
+  }
+  .catalogo-completo .catalogo-fondo {
+    width: 100%;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+  }
+  .catalogo-completo .catalogo-fondo .titulo-categoria h5 {
+    font-size: 2rem;
+    padding-left: 15px;
+  }
+  .catalogo-completo .catalogo-fondo .categoria-cards {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .catalogo-completo .catalogo-fondo .articulo {
+    width: 85%;
+    padding: 0px;
+  }
+  .catalogo-completo .catalogo-fondo .espacio-card {
+    align-items: center;
+  }
 }
 @media only screen and (min-width: 991px) {
   header .barra-navegacion {
     height: 100px;
   }
   /*-----catalogo mujer------*/
-  /*titulo de la pagina*/
-  .titulo-h1-catalogo-mobile {
-    display: none;
-  }
 }
 /*--------------------html general------------------------------*/
 * {

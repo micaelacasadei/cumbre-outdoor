@@ -490,12 +490,146 @@
 
             }
 
+            .desplegable{
+
+             
+                
+                    margin-left: 90px;
+                    width: 95%;
+                
+                
+            }
+
 
         }
 
     }
 
 
+    /*------------------------------------- catalogo mujer------*/
+
+    .banner-catalogo {
+        height: 150px;
+        margin: 0px;
+ 
+ .titulo-h1-catalogo {
+         padding-top: 100px;
+ 
+         //height: 150px;
+ 
+         h1 {
+             font-size: 2rem;
+ 
+ 
+         }
+ 
+         //padding: 0px;
+         //background-color: $cumbre-beige;
+     }
+ 
+     }
+ 
+     
+ 
+ 
+     .titulo-catalogo {
+         display: none;
+     }
+ 
+ 
+ 
+     .catalogo-completo {
+ 
+         margin: 0px;
+ 
+         .catalogo-filtro {
+             width: 100%;
+             padding: 0px;
+             margin: 0px;
+             background-color: white;
+             //  border-top: 1px solid #bdbaba;
+             // border-bottom: 1px solid #bdbaba;
+             position: sticky;
+             top: 80px;
+             z-index: 5;
+ 
+             // background: rgba(245,245,220,0.87);
+             // background: linear-gradient(90deg,rgba(245,245,220,0.87) 50%, rgba(245,245,220,0.87) 50%);
+             // background: -webkit-linear-gradient(90deg,rgba(245,245,220,0.87) 50%, rgba(245,245,220,0.87) 50%);
+             // background: -moz-linear-gradient(90deg,rgba(245,245,220,0.87) 50%, rgba(245,245,220,0.87) 50%);
+ 
+             background: $cumbre-beige;
+             background: linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
+             background: -webkit-linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
+             background: -moz-linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
+ 
+             .filtro {
+                 flex-direction: row;
+                 justify-content: flex-start;
+                 align-items: center;
+                 padding: 0px;
+                 margin: 20px;
+                 top: 120px;
+ 
+ 
+ 
+                 .categoria {
+                     font-size: 1rem;
+                     font-weight: 200;
+                     margin-top: 0px;
+                     margin: 0px;
+                     align-items: center;
+                     background-color: transparent;
+ 
+ 
+                 }
+ 
+             }
+ 
+             a {
+                 background-color: white;
+                 //align-items: center; 
+ 
+             }
+ 
+ 
+         }
+ 
+         .catalogo-fondo {
+             width: 100%;
+             align-items: center;
+             padding: 0px;
+             margin: 0px;
+ 
+             .titulo-categoria{
+                h5{
+                 font-size: 2rem;
+                 padding-left: 15px;
+                }
+                 
+             }
+ 
+             .categoria-cards {
+                 width: 100%;
+                 margin-left: 0px;
+             }
+ 
+             .articulo {
+                 width: 85%;
+                 //margin: 0px 0px 0px 10px;
+                 padding: 0px;
+             }
+ 
+ 
+             .espacio-card {
+                 align-items: center;
+ 
+ 
+             }
+         }
+ 
+     }
+ 
 
 
 
@@ -520,9 +654,6 @@
 
 
     /*-----catalogo mujer------*/
-/*titulo de la pagina*/
-.titulo-h1-catalogo-mobile{
-    display: none;
-}
+
 
 }
