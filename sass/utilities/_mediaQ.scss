@@ -29,15 +29,15 @@
 
             }
 
-            .desplegable{
+            .desplegable {
 
-             
-                
+
+
                 margin-left: 100px;
                 width: 50%;
-            
-            
-        }
+
+
+            }
 
 
         }
@@ -108,6 +108,19 @@
         }
     }
 
+    .acceso-catalogo-inicio {
+        margin-top: 20px;
+    }
+
+    .titulo-aventura {
+
+        h2 {
+
+            margin: 20px;
+        }
+
+    }
+
     /*-----acceso a catalogos index------------*/
 
     .acceso-catalogo-inicio {
@@ -115,12 +128,24 @@
         //align-content: space-around;
         justify-content: center;
         align-items: center;
-        margin: 30px;
+        margin: 20px;
 
         .acceso-tipo {
             width: 80%;
             margin: 20px;
+
+            //justify-content: center;
+            align-items: center;
+
+            h5{
+                text-align: center;
+            }
+           
+
+
         }
+
+       
 
 
     }
@@ -134,49 +159,49 @@
         }
 
 
-        // .filaDestacados {
-        //     flex-direction: column;
-
-        //     align-content: space-around;
-        //     justify-content: center;
-
-        // }
-
-        .destacados {
-            margin: 0px;
-
-
-
-
-        }
-
         .filaDestacados {
-            display: grid;
-            grid-template-areas:
-                "destacados-1   destacados-2"
-                "destacados-3   destacados-4";
+            flex-direction: column;
 
-            .destacados-1 {
-                grid-area: destacados-1;
-            }
-
-            .destacados-2 {
-                grid-area: destacados-2;
-            }
-
-            .destacados-3 {
-                grid-area: destacados-3;
-            }
-
-            .destacados-4 {
-                grid-area: destacados-4;
-            }
-
-            align-content: space-around;
+            align-content: center;
             justify-content: center;
 
         }
+
+
+        margin: 0px;
+
+
     }
+
+    /*recomendaciones index*/
+    .recomendaciones-index {
+
+    .recomendaciones-titulo {
+        font-size: 2.3rem;
+        margin: 30px;
+    }
+
+.recomendaciones-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      
+    }
+
+    .recomendacion-1 {
+        width: 90%;
+        padding: 0px;
+    }
+
+    }
+
+
+
+    /*----------------------------------comunidad*/
+
+    
+
 
     /*------musica----*/
     .musica {
@@ -188,34 +213,6 @@
 
     /*-----rcomendaciones -----*/
 
-    .recomendaciones-titulo {
-        font-size: 2.3rem;
-        margin: 30px;
-    }
-
-    .recomendaciones-index {
-
-        grid-template-rows: repeat(3, 400px);
-        grid-template-areas:
-            "recomendacion-1 "
-            " recomendacion-2"
-            "  recomendacion-3";
-
-        justify-content: center;
-        row-gap: 15px;
-        grid-template-columns: 85%;
-
-        .recomendacion-1 {
-            h5 {
-                margin-bottom: 10px;
-            }
-        }
-
-
-    }
-
-
-
     .titulo-comunidad {
         h2 {
             font-size: 2rem;
@@ -226,7 +223,26 @@
     /*----------------------Nosotros--------*/
 
     .banner-nosotros {
-        display: none;
+        
+            height: 150px;
+            margin: 0px;
+    
+            .titulo-h1-nosotros {
+                padding-top: 10px;
+    
+                //height: 150px;
+    
+                h1 {
+                    font-size: 2rem;
+    
+    
+                }
+    
+                //padding: 0px;
+                //background-color: $cumbre-beige;
+            }
+    
+        
     }
 
 
@@ -290,27 +306,27 @@
     /*------------------------------------- catalogo mujer------*/
 
     .banner-catalogo {
-       height: 150px;
-       margin: 0px;
+        height: 150px;
+        margin: 0px;
 
-.titulo-h1-catalogo {
-        padding-top: 100px;
+        .titulo-h1-catalogo {
+            padding-top: 100px;
 
-        //height: 150px;
+            //height: 150px;
 
-        h1 {
-            font-size: 2rem;
+            h1 {
+                font-size: 2rem;
 
 
+            }
+
+            //padding: 0px;
+            //background-color: $cumbre-beige;
         }
 
-        //padding: 0px;
-        //background-color: $cumbre-beige;
     }
 
-    }
 
-    
 
 
     .titulo-catalogo {
@@ -382,12 +398,12 @@
             padding: 0px;
             margin: 0px;
 
-            .titulo-categoria{
-               h5{
-                font-size: 2rem;
-                padding-left: 15px;
-               }
-                
+            .titulo-categoria {
+                h5 {
+                    font-size: 2rem;
+                    padding-left: 15px;
+                }
+
             }
 
             .categoria-cards {
@@ -415,29 +431,7 @@
 
     /*------------comunidad--------------*/
 
-    .recomendaciones-comunidad {
-
-        display: grid;
-        grid-template-columns: none;
-        grid-template-rows: repeat(3, 400px);
-
-        grid-template-areas:
-            "recomendacion-1"
-            " recomendacion-2"
-            "recomendacion-3";
-
-        justify-content: center;
-        justify-items: start;
-
-        .recomendacion-1 {
-            width: 300px;
-
-            img {
-                width: 300px;
-            }
-        }
-
-    }
+    
 
     .rutas {
 
@@ -500,14 +494,14 @@
 
             }
 
-            .desplegable{
+            .desplegable {
 
-             
-                
-                    margin-left: 90px;
-                    width: 95%;
-                
-                
+
+
+                margin-left: 90px;
+                width: 95%;
+
+
             }
 
 
@@ -521,125 +515,125 @@
     .banner-catalogo {
         height: 150px;
         margin: 0px;
- 
- .titulo-h1-catalogo {
-         padding-top: 100px;
- 
-         //height: 150px;
- 
-         h1 {
-             font-size: 2rem;
- 
- 
-         }
- 
-         //padding: 0px;
-         //background-color: $cumbre-beige;
-     }
- 
-     }
- 
-     
- 
- 
-     .titulo-catalogo {
-         display: none;
-     }
- 
- 
- 
-     .catalogo-completo {
- 
-         margin: 0px;
- 
-         .catalogo-filtro {
-             width: 100%;
-             padding: 0px;
-             margin: 0px;
-             background-color: white;
-             //  border-top: 1px solid #bdbaba;
-             // border-bottom: 1px solid #bdbaba;
-             position: sticky;
-             top: 80px;
-             z-index: 5;
- 
-             // background: rgba(245,245,220,0.87);
-             // background: linear-gradient(90deg,rgba(245,245,220,0.87) 50%, rgba(245,245,220,0.87) 50%);
-             // background: -webkit-linear-gradient(90deg,rgba(245,245,220,0.87) 50%, rgba(245,245,220,0.87) 50%);
-             // background: -moz-linear-gradient(90deg,rgba(245,245,220,0.87) 50%, rgba(245,245,220,0.87) 50%);
- 
-             background: $cumbre-beige;
-             background: linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
-             background: -webkit-linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
-             background: -moz-linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
- 
-             .filtro {
-                 flex-direction: row;
-                 justify-content: flex-start;
-                 align-items: center;
-                 padding: 0px;
-                 margin: 20px;
-                 top: 120px;
- 
- 
- 
-                 .categoria {
-                     font-size: 1rem;
-                     font-weight: 200;
-                     margin-top: 0px;
-                     margin: 0px;
-                     align-items: center;
-                     background-color: transparent;
- 
- 
-                 }
- 
-             }
- 
-             a {
-                 background-color: white;
-                 //align-items: center; 
- 
-             }
- 
- 
-         }
- 
-         .catalogo-fondo {
-             width: 100%;
-             align-items: center;
-             padding: 0px;
-             margin: 0px;
- 
-             .titulo-categoria{
-                h5{
-                 font-size: 2rem;
-                 padding-left: 15px;
+
+        .titulo-h1-catalogo {
+            padding-top: 100px;
+
+            //height: 150px;
+
+            h1 {
+                font-size: 2rem;
+
+
+            }
+
+            //padding: 0px;
+            //background-color: $cumbre-beige;
+        }
+
+    }
+
+
+
+
+    .titulo-catalogo {
+        display: none;
+    }
+
+
+
+    .catalogo-completo {
+
+        margin: 0px;
+
+        .catalogo-filtro {
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+            background-color: white;
+            //  border-top: 1px solid #bdbaba;
+            // border-bottom: 1px solid #bdbaba;
+            position: sticky;
+            top: 80px;
+            z-index: 5;
+
+            // background: rgba(245,245,220,0.87);
+            // background: linear-gradient(90deg,rgba(245,245,220,0.87) 50%, rgba(245,245,220,0.87) 50%);
+            // background: -webkit-linear-gradient(90deg,rgba(245,245,220,0.87) 50%, rgba(245,245,220,0.87) 50%);
+            // background: -moz-linear-gradient(90deg,rgba(245,245,220,0.87) 50%, rgba(245,245,220,0.87) 50%);
+
+            background: $cumbre-beige;
+            background: linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
+            background: -webkit-linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
+            background: -moz-linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
+
+            .filtro {
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 0px;
+                margin: 20px;
+                top: 120px;
+
+
+
+                .categoria {
+                    font-size: 1rem;
+                    font-weight: 200;
+                    margin-top: 0px;
+                    margin: 0px;
+                    align-items: center;
+                    background-color: transparent;
+
+
                 }
-                 
-             }
- 
-             .categoria-cards {
-                 width: 100%;
-                 margin-left: 0px;
-             }
- 
-             .articulo {
-                 width: 85%;
-                 //margin: 0px 0px 0px 10px;
-                 padding: 0px;
-             }
- 
- 
-             .espacio-card {
-                 align-items: center;
- 
- 
-             }
-         }
- 
-     }
- 
+
+            }
+
+            a {
+                background-color: white;
+                //align-items: center; 
+
+            }
+
+
+        }
+
+        .catalogo-fondo {
+            width: 100%;
+            align-items: center;
+            padding: 0px;
+            margin: 0px;
+
+            .titulo-categoria {
+                h5 {
+                    font-size: 2rem;
+                    padding-left: 15px;
+                }
+
+            }
+
+            .categoria-cards {
+                width: 100%;
+                margin-left: 0px;
+            }
+
+            .articulo {
+                width: 85%;
+                //margin: 0px 0px 0px 10px;
+                padding: 0px;
+            }
+
+
+            .espacio-card {
+                align-items: center;
+
+
+            }
+        }
+
+    }
+
 
 
 

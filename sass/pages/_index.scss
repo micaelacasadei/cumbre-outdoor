@@ -46,82 +46,66 @@ body {
 
 
 
-/*-------------------destacados-1*/
-
-// .destacados-1 {
-//     text-align: center;
-
-//     h2 {
-//         display: inline;
-//         padding: 20px;
-
-//     }
-
-//     background-color: white;
-//     margin: 30px;
-
-//     .articulos-destacados {
-
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: space-around;
 
 
+/*titulo aventura*/
 
-//         .card-1 {
-//             border: none;
+.titulo-aventura {
 
-//             h5 {
-//                 color: black;
-//             }
+    h2 {
+        text-align: center;
+        margin: 40px;
+    }
 
-//             margin: 30px;
-//             width: 20%;
+}
 
-//             img {
-//                 width: 100%;
-//             }
-//         }
-//     }
-
-// }
 
 
 /*acceso a catalogos*/
 
-.acceso-catalogo-inicio{
+.acceso-catalogo-inicio {
 
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px;
 
-    .acceso-tipo{
-       width: 30%;
-        align-items: center;
-        
-        .titulo-card{
-            h5{
-               text-decoration: none; 
+    .acceso-tipo {
+        width: 30%;
+        align-items: start;
+        background-color: $cumbre-beige;
+        border: none;
+
+        .titulo-card {
+            a {
+                text-decoration: none;
+                font-size: 2.5rem;
+                color: black;
+
             }
-             
-        }
-       h5{
-        font-size: 2rem;
-       
-        text-align: center;
-       }
 
-       img{
-        padding-bottom: 10px;
-       }
-       .boton-catalogo{
-        font-size: 1.5rem;
-       padding: 10px;
-       background-color: red;
-       
-       }
-       
+        }
+
+        h5 {
+            font-size: 2.5rem;
+            text-decoration: none;
+            font-style: normal;
+
+            text-align: start;
+        }
+
+        img {
+            padding-bottom: 10px;
+        }
+
+        .boton-catalogo-inicio {
+            font-size: 1.5rem;
+            padding: 5px;
+            margin-top: 10px;
+            background-color: rgb(204, 30, 30);
+            border-color: rgb(204, 30, 30);
+        }
+
     }
 }
 
@@ -131,71 +115,48 @@ margin: 50px;
 
 .destacados {
     text-align: center;
-    background-image: url(../medios/fondo-montanias.jpg);
+    background-image: url(../medios/foto-montanias-claro2.jpg);
     background-size: cover;
     //background-color: white;
     //ssmargin: 40px;
     padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+    // padding-bottom: 10px;
+    // margin-bottom: 20px;
 
 
     h2 {
         color: #141414;
-        margin: 30px;
+        margin: 20px;
 
 
     }
 
     .filaDestacados {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-content: flex-end;
-
-        .productoDestacado {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: space-around;
+        // align-content: flex-end;
+        padding-bottom: 30px;
 
 
-
-            img {
-                //cursor: zoom-in;
-                
-                /* borde redondeado*/
-                width: 90%;
-                border-radius: 10px 10px 10px 10px;
-                -webkit-border-radius: 10px 10px 10px 10px;
-                -moz-border-radius: 10px 10px 10px 10px;
-            }
-
-
-            a {
-                font-size: 1.5rem;
-                text-decoration: none;
-                color: #141414;
-                padding-top: 15px;
-                padding-bottom: 30px;
-
-            }
-
+        .destacados-1 {
+            //width: 20%;
+            margin: 0px;
         }
 
-        // .productoDestacado :hover {
 
-            
 
-            /* escalar*/
-            // transform: scale(1.1);
-            // -webkit-transform: scale(1.1);
-            // -moz-transform: scale(1.1);
 
-            /*sombra*/
-//            box-shadow: -1px 2px 7px 3px rgba(191,186,186,0.75);
-// -webkit-box-shadow: -1px 2px 7px 3px rgba(191,186,186,0.75);
-// -moz-box-shadow: -1px 2px 7px 3px rgba(191,186,186,0.75);
-        // }
+
+
+        a {
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: #141414;
+            //padding-top: 15px;
+            // padding-bottom: 30px;
+
+        }
 
 
     }
@@ -222,63 +183,62 @@ margin: 50px;
 /*--------Recomendaciones-----------*/
 
 .recomendaciones-titulo {
-    margin: 50px;
+    margin: 20px;
     text-align: center;
 }
 
 
 .recomendaciones-index {
 
-    display: grid;
-    grid-template-columns: repeat(3, 35%);
-    grid-template-areas:
-        "recomendacion-1  recomendacion-2  recomendacion-3";
 
-    justify-content: space-around;
-    justify-items: center;
-    margin: 30px;
+    .recomendaciones-flex {
+        justify-content: space-around;
+        padding-bottom: 20px;
+        
+    }
+
+    .texto-recomendaciones-index {
+        margin: 0px
+    }
 
     .recomendacion-1 {
         grid-area: recomendacion-1;
         background-color: white;
-        width: 350px;
+      //width: 30%;
+        align-items: center;
         text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+
+        margin: 10px;
 
         h5 {
             font-size: 2rem;
-            margin-top: 20px;
+            margin-top: 10px;
             margin-bottom: 20px;
         }
 
         a {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             text-decoration: none;
-            color: #575555;
-
+            color: #000000;
         }
 
-        img {
-            width: 350px;
+        a :hover {
+            color: rgb(204, 30, 30);
         }
 
 
 
 
+
+
+
     }
 
 
 
-    .recomendacion-2 {
-        @extend .recomendacion-1;
-        grid-area: recomendacion-2;
 
-    }
-
-    .recomendacion-3 {
-        @extend .recomendacion-1;
-        grid-area: recomendacion-3;
-
-    }
 
 
 }

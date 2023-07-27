@@ -106,73 +106,68 @@ body {
   font-size: 3rem;
 }
 
-/*-------------------destacados-1*/
+/*titulo aventura*/
+.titulo-aventura h2 {
+  text-align: center;
+  margin: 40px;
+}
+
 /*acceso a catalogos*/
 .acceso-catalogo-inicio {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 50px;
 }
 .acceso-catalogo-inicio .acceso-tipo {
   width: 30%;
-  align-items: center;
+  align-items: start;
+  background-color: #EEF3F7;
+  border: none;
 }
-.acceso-catalogo-inicio .acceso-tipo .titulo-card h5 {
+.acceso-catalogo-inicio .acceso-tipo .titulo-card a {
   text-decoration: none;
+  font-size: 2.5rem;
+  color: black;
 }
 .acceso-catalogo-inicio .acceso-tipo h5 {
-  font-size: 2rem;
-  text-align: center;
+  font-size: 2.5rem;
+  text-decoration: none;
+  font-style: normal;
+  text-align: start;
 }
 .acceso-catalogo-inicio .acceso-tipo img {
   padding-bottom: 10px;
 }
-.acceso-catalogo-inicio .acceso-tipo .boton-catalogo {
+.acceso-catalogo-inicio .acceso-tipo .boton-catalogo-inicio {
   font-size: 1.5rem;
-  padding: 10px;
-  background-color: red;
+  padding: 5px;
+  margin-top: 10px;
+  background-color: rgb(204, 30, 30);
+  border-color: rgb(204, 30, 30);
 }
 
 /*-------------------destacados*/
 .destacados {
   text-align: center;
-  background-image: url(../medios/fondo-montanias.jpg);
+  background-image: url(../medios/foto-montanias-claro2.jpg);
   background-size: cover;
   padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
 }
 .destacados h2 {
   color: #141414;
-  margin: 30px;
+  margin: 20px;
 }
 .destacados .filaDestacados {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: flex-end;
-  /* escalar*/
-  /*sombra*/
+  padding-bottom: 30px;
 }
-.destacados .filaDestacados .productoDestacado {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.destacados .filaDestacados .destacados-1 {
+  margin: 0px;
 }
-.destacados .filaDestacados .productoDestacado img {
-  /* borde redondeado*/
-  width: 90%;
-  border-radius: 10px 10px 10px 10px;
-  -webkit-border-radius: 10px 10px 10px 10px;
-  -moz-border-radius: 10px 10px 10px 10px;
-}
-.destacados .filaDestacados .productoDestacado a {
+.destacados .filaDestacados a {
   font-size: 1.5rem;
   text-decoration: none;
   color: #141414;
-  padding-top: 15px;
-  padding-bottom: 30px;
 }
 
 /*--------------musica*/
@@ -191,42 +186,38 @@ body {
 
 /*--------Recomendaciones-----------*/
 .recomendaciones-titulo {
-  margin: 50px;
+  margin: 20px;
   text-align: center;
 }
 
-.recomendaciones-index {
-  display: grid;
-  grid-template-columns: repeat(3, 35%);
-  grid-template-areas: "recomendacion-1  recomendacion-2  recomendacion-3";
+.recomendaciones-index .recomendaciones-flex {
   justify-content: space-around;
-  justify-items: center;
-  margin: 30px;
+  padding-bottom: 20px;
 }
-.recomendaciones-index .recomendacion-1, .recomendaciones-index .recomendacion-3, .recomendaciones-index .recomendacion-2 {
+.recomendaciones-index .texto-recomendaciones-index {
+  margin: 0px;
+}
+.recomendaciones-index .recomendacion-1, .recomendaciones-index .recomendaciones-comunidad .recomendacion-3, .recomendaciones-comunidad .recomendaciones-index .recomendacion-3, .recomendaciones-index .recomendaciones-comunidad .recomendacion-2, .recomendaciones-comunidad .recomendaciones-index .recomendacion-2 {
   grid-area: recomendacion-1;
   background-color: white;
-  width: 350px;
+  align-items: center;
   text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 10px;
 }
-.recomendaciones-index .recomendacion-1 h5, .recomendaciones-index .recomendacion-3 h5, .recomendaciones-index .recomendacion-2 h5 {
+.recomendaciones-index .recomendacion-1 h5, .recomendaciones-index .recomendaciones-comunidad .recomendacion-3 h5, .recomendaciones-comunidad .recomendaciones-index .recomendacion-3 h5, .recomendaciones-index .recomendaciones-comunidad .recomendacion-2 h5, .recomendaciones-comunidad .recomendaciones-index .recomendacion-2 h5 {
   font-size: 2rem;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
-.recomendaciones-index .recomendacion-1 a, .recomendaciones-index .recomendacion-3 a, .recomendaciones-index .recomendacion-2 a {
-  font-size: 1.5rem;
+.recomendaciones-index .recomendacion-1 a, .recomendaciones-index .recomendaciones-comunidad .recomendacion-3 a, .recomendaciones-comunidad .recomendaciones-index .recomendacion-3 a, .recomendaciones-index .recomendaciones-comunidad .recomendacion-2 a, .recomendaciones-comunidad .recomendaciones-index .recomendacion-2 a {
+  font-size: 1.8rem;
   text-decoration: none;
-  color: #575555;
+  color: #000000;
 }
-.recomendaciones-index .recomendacion-1 img, .recomendaciones-index .recomendacion-3 img, .recomendaciones-index .recomendacion-2 img {
-  width: 350px;
-}
-.recomendaciones-index .recomendacion-2 {
-  grid-area: recomendacion-2;
-}
-.recomendaciones-index .recomendacion-3 {
-  grid-area: recomendacion-3;
+.recomendaciones-index .recomendacion-1 a :hover, .recomendaciones-index .recomendaciones-comunidad .recomendacion-3 a :hover, .recomendaciones-comunidad .recomendaciones-index .recomendacion-3 a :hover, .recomendaciones-index .recomendaciones-comunidad .recomendacion-2 a :hover, .recomendaciones-comunidad .recomendaciones-index .recomendacion-2 a :hover {
+  color: rgb(204, 30, 30);
 }
 
 body {
@@ -383,6 +374,22 @@ body {
 
 body {
   background-color: #EEF3F7;
+}
+
+.banner-comunidad {
+  background-image: url(../medios/trekking-f-1.jpg);
+  height: 350px;
+  background-size: cover;
+  background-position-y: center;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.banner-comunidad h1 {
+  padding-top: 230px;
+  padding-bottom: 0px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 4px 12px rgba(77, 76, 76, 0.96);
 }
 
 .titulo-comunidad h2 {
@@ -544,69 +551,75 @@ body {
   .carrousel-index-1 h1 {
     font-size: 1rem;
   }
+  .acceso-catalogo-inicio {
+    margin-top: 20px;
+  }
+  .titulo-aventura h2 {
+    margin: 20px;
+  }
   /*-----acceso a catalogos index------------*/
   .acceso-catalogo-inicio {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px;
+    margin: 20px;
   }
   .acceso-catalogo-inicio .acceso-tipo {
     width: 80%;
     margin: 20px;
+    align-items: center;
+  }
+  .acceso-catalogo-inicio .acceso-tipo h5 {
+    text-align: center;
   }
   /*----destacados-----------*/
+  .destacados {
+    margin: 0px;
+  }
   .destacados h2 {
     font-size: 2.3rem;
     margin: 30px;
   }
-  .destacados .destacados {
-    margin: 0px;
-  }
   .destacados .filaDestacados {
-    display: grid;
-    grid-template-areas: "destacados-1   destacados-2" "destacados-3   destacados-4";
-    align-content: space-around;
+    flex-direction: column;
+    align-content: center;
     justify-content: center;
   }
-  .destacados .filaDestacados .destacados-1 {
-    grid-area: destacados-1;
+  /*recomendaciones index*/
+  .recomendaciones-index .recomendaciones-titulo {
+    font-size: 2.3rem;
+    margin: 30px;
   }
-  .destacados .filaDestacados .destacados-2 {
-    grid-area: destacados-2;
+  .recomendaciones-index .recomendaciones-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  .destacados .filaDestacados .destacados-3 {
-    grid-area: destacados-3;
+  .recomendaciones-index .recomendacion-1, .recomendaciones-index .recomendaciones-comunidad .recomendacion-2, .recomendaciones-comunidad .recomendaciones-index .recomendacion-2, .recomendaciones-index .recomendaciones-comunidad .recomendacion-3, .recomendaciones-comunidad .recomendaciones-index .recomendacion-3 {
+    width: 90%;
+    padding: 0px;
   }
-  .destacados .filaDestacados .destacados-4 {
-    grid-area: destacados-4;
-  }
+  /*----------------------------------comunidad*/
   /*------musica----*/
   .musica h2 {
     font-size: 2.3rem;
     margin: 30 px;
   }
   /*-----rcomendaciones -----*/
-  .recomendaciones-titulo {
-    font-size: 2.3rem;
-    margin: 30px;
-  }
-  .recomendaciones-index {
-    grid-template-rows: repeat(3, 400px);
-    grid-template-areas: "recomendacion-1 " " recomendacion-2" "  recomendacion-3";
-    justify-content: center;
-    row-gap: 15px;
-    grid-template-columns: 85%;
-  }
-  .recomendaciones-index .recomendacion-1 h5, .recomendaciones-index .recomendacion-2 h5, .recomendaciones-index .recomendacion-3 h5 {
-    margin-bottom: 10px;
-  }
   .titulo-comunidad h2 {
     font-size: 2rem;
   }
   /*----------------------Nosotros--------*/
   .banner-nosotros {
-    display: none;
+    height: 150px;
+    margin: 0px;
+  }
+  .banner-nosotros .titulo-h1-nosotros {
+    padding-top: 10px;
+  }
+  .banner-nosotros .titulo-h1-nosotros h1 {
+    font-size: 2rem;
   }
   .nosotros-container {
     grid-template-areas: "titulo-nos" "foto1" "texto1" "texto2" "texto3" "foto3";
@@ -711,20 +724,6 @@ body {
     align-items: center;
   }
   /*------------comunidad--------------*/
-  .recomendaciones-comunidad {
-    display: grid;
-    grid-template-columns: none;
-    grid-template-rows: repeat(3, 400px);
-    grid-template-areas: "recomendacion-1" " recomendacion-2" "recomendacion-3";
-    justify-content: center;
-    justify-items: start;
-  }
-  .recomendaciones-comunidad .recomendacion-1, .recomendaciones-comunidad .recomendacion-2, .recomendaciones-comunidad .recomendacion-3 {
-    width: 300px;
-  }
-  .recomendaciones-comunidad .recomendacion-1 img, .recomendaciones-comunidad .recomendacion-2 img, .recomendaciones-comunidad .recomendacion-3 img {
-    width: 300px;
-  }
   .rutas {
     flex-direction: column;
   }
