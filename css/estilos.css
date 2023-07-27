@@ -152,11 +152,12 @@ body {
   text-align: center;
   background-image: url(../medios/foto-montanias-claro2.jpg);
   background-size: cover;
-  padding-top: 10px;
+  margin-bottom: 40px;
 }
 .destacados h2 {
   color: #141414;
-  margin: 20px;
+  margin: 30px;
+  padding-top: 20px;
 }
 .destacados .filaDestacados {
   padding-bottom: 30px;
@@ -197,7 +198,7 @@ body {
 .recomendaciones-index .texto-recomendaciones-index {
   margin: 0px;
 }
-.recomendaciones-index .recomendacion-1, .recomendaciones-index .recomendaciones-comunidad .recomendacion-3, .recomendaciones-comunidad .recomendaciones-index .recomendacion-3, .recomendaciones-index .recomendaciones-comunidad .recomendacion-2, .recomendaciones-comunidad .recomendaciones-index .recomendacion-2 {
+.recomendaciones-index .recomendacion-1 {
   grid-area: recomendacion-1;
   background-color: white;
   align-items: center;
@@ -206,17 +207,17 @@ body {
   padding-right: 0px;
   margin: 10px;
 }
-.recomendaciones-index .recomendacion-1 h5, .recomendaciones-index .recomendaciones-comunidad .recomendacion-3 h5, .recomendaciones-comunidad .recomendaciones-index .recomendacion-3 h5, .recomendaciones-index .recomendaciones-comunidad .recomendacion-2 h5, .recomendaciones-comunidad .recomendaciones-index .recomendacion-2 h5 {
+.recomendaciones-index .recomendacion-1 h5 {
   font-size: 2rem;
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.recomendaciones-index .recomendacion-1 a, .recomendaciones-index .recomendaciones-comunidad .recomendacion-3 a, .recomendaciones-comunidad .recomendaciones-index .recomendacion-3 a, .recomendaciones-index .recomendaciones-comunidad .recomendacion-2 a, .recomendaciones-comunidad .recomendaciones-index .recomendacion-2 a {
+.recomendaciones-index .recomendacion-1 a {
   font-size: 1.8rem;
   text-decoration: none;
   color: #000000;
 }
-.recomendaciones-index .recomendacion-1 a :hover, .recomendaciones-index .recomendaciones-comunidad .recomendacion-3 a :hover, .recomendaciones-comunidad .recomendaciones-index .recomendacion-3 a :hover, .recomendaciones-index .recomendaciones-comunidad .recomendacion-2 a :hover, .recomendaciones-comunidad .recomendaciones-index .recomendacion-2 a :hover {
+.recomendaciones-index .recomendacion-1 a :hover {
   color: rgb(204, 30, 30);
 }
 
@@ -243,12 +244,12 @@ body {
 .nosotros-container {
   display: grid;
   grid-template-areas: "titulo-nos titulo-nos titulo-nos   titulo-nos" "foto1       foto1      texto1       texto1" "texto2      foto2      texto3       foto3";
-  grid-template-columns: repeat(4, 20%);
+  grid-template-columns: repeat(4, 22%);
   grid-template-rows: 80px 300px 300px;
   justify-content: space-around;
   justify-items: center;
   margin: 0px 40px 40px 40px;
-  row-gap: 20px;
+  row-gap: 30px;
 }
 .nosotros-container .titulo-nos {
   grid-area: titulo-nos;
@@ -265,12 +266,18 @@ body {
   grid-area: texto1;
   justify-content: center;
 }
+.nosotros-container .texto1 h2 {
+  margin-bottom: 10px;
+}
 .nosotros-container .texto1 p {
   font-size: 1.5rem;
 }
 .nosotros-container .texto2 {
   grid-area: texto2;
   justify-content: center;
+}
+.nosotros-container .texto2 h2 {
+  margin-bottom: 10px;
 }
 .nosotros-container .texto2 p {
   grid-area: texto2;
@@ -291,6 +298,9 @@ body {
   grid-area: texto3;
   justify-content: center;
 }
+.nosotros-container .texto3 h2 {
+  margin-bottom: 10px;
+}
 .nosotros-container .texto3 p {
   grid-area: texto3;
 }
@@ -304,7 +314,6 @@ body {
   height: 350px;
   background-size: cover;
   background-position-y: center;
-  margin-bottom: 30px;
   text-align: center;
 }
 .banner-catalogo .titulo-h1-catalogo {
@@ -317,6 +326,9 @@ body {
   display: inline;
 }
 
+.catalogo-completo {
+  padding-top: 20px;
+}
 .catalogo-completo .catalogo-filtro {
   width: 20%;
   margin-right: 40px;
@@ -397,50 +409,65 @@ body {
 }
 
 .recomendaciones-comunidad {
-  display: grid;
-  grid-template-columns: repeat(3, 35%);
-  grid-template-areas: "recomendacion-1  recomendacion-2  recomendacion-3";
-  justify-content: space-around;
-  justify-items: center;
-  margin: 30px;
+  margin-bottom: 20px;
 }
-.recomendaciones-comunidad .recomendacion-1, .recomendaciones-comunidad .recomendacion-3, .recomendaciones-comunidad .recomendacion-2 {
-  grid-area: recomendacion-1;
-  background-color: rgb(255, 252, 252);
-  width: 300px;
+.recomendaciones-comunidad .reco-1 {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background: none;
 }
-.recomendaciones-comunidad .recomendacion-1 .texto-reco h5, .recomendaciones-comunidad .recomendacion-3 .texto-reco h5, .recomendaciones-comunidad .recomendacion-2 .texto-reco h5 {
-  font-size: 1.5rem;
-  margin: 30px;
+.recomendaciones-comunidad .reco-1 a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
 }
-.recomendaciones-comunidad .recomendacion-1 img, .recomendaciones-comunidad .recomendacion-3 img, .recomendaciones-comunidad .recomendacion-2 img {
-  width: 300px;
-}
-.recomendaciones-comunidad .recomendacion-2 {
-  grid-area: recomendacion-2;
-}
-.recomendaciones-comunidad .recomendacion-3 {
-  grid-area: recomendacion-3;
+.recomendaciones-comunidad .reco-1 a h5 {
+  font-size: 1.8rem;
+  margin: 10px;
 }
 
-.musica p {
+/*musica*/
+.musica-comunidad {
+  background-color: #464543;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.musica-comunidad h2 {
+  color: antiquewhite;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+.musica-comunidad p {
   color: white;
   margin-bottom: 20px;
 }
 
+/*mapa y rutas*/
 .rutas {
   display: flex;
 }
-.rutas .mapa {
+.rutas .mapa-c {
+  width: 50%;
   margin: 50px;
 }
 .rutas .texto-mapa {
-  margin: 50px;
+  margin: 40px;
 }
 .rutas .texto-mapa h2 {
   margin-bottom: 30px;
 }
 
+.ubicacion {
+  display: flex;
+}
+.ubicacion img {
+  width: 40%;
+}
+
+/*instagram*/
 .titulo-comunidad-insta {
   margin: 50px;
 }
@@ -454,15 +481,19 @@ body {
 }
 .compartido-instagram .insta1 {
   grid-area: insta1;
+  margin: 20px;
 }
 .compartido-instagram .insta2 {
   grid-area: insta2;
+  margin: 20px;
 }
 .compartido-instagram .insta3 {
   grid-area: insta3;
+  margin: 20px;
 }
 .compartido-instagram .insta5 {
   grid-area: insta5;
+  margin: 20px;
 }
 
 body {
@@ -492,10 +523,10 @@ body {
 .encontranos {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
-.encontranos .mapa-locales {
-  margin-right: 50px;
+.encontranos .mapa-locales iframe {
+  margin-left: 250px;
   margin-bottom: 50px;
 }
 .encontranos .direcciones {
@@ -574,16 +605,19 @@ body {
   }
   /*----destacados-----------*/
   .destacados {
-    margin: 0px;
+    margin-bottom: 30px;
   }
   .destacados h2 {
     font-size: 2.3rem;
-    margin: 30px;
+    margin: 20px;
   }
   .destacados .filaDestacados {
     flex-direction: column;
     align-content: center;
     justify-content: center;
+  }
+  .destacados .filaDestacados .destacados-1 {
+    margin-bottom: 20px;
   }
   /*recomendaciones index*/
   .recomendaciones-index .recomendaciones-titulo {
@@ -596,7 +630,7 @@ body {
     align-items: center;
     justify-content: center;
   }
-  .recomendaciones-index .recomendacion-1, .recomendaciones-index .recomendaciones-comunidad .recomendacion-2, .recomendaciones-comunidad .recomendaciones-index .recomendacion-2, .recomendaciones-index .recomendaciones-comunidad .recomendacion-3, .recomendaciones-comunidad .recomendaciones-index .recomendacion-3 {
+  .recomendaciones-index .recomendacion-1 {
     width: 90%;
     padding: 0px;
   }
@@ -612,36 +646,30 @@ body {
   }
   /*----------------------Nosotros--------*/
   .banner-nosotros {
-    height: 150px;
+    height: 120px;
     margin: 0px;
   }
   .banner-nosotros .titulo-h1-nosotros {
     padding-top: 10px;
   }
   .banner-nosotros .titulo-h1-nosotros h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    padding-top: 60px;
   }
   .nosotros-container {
-    grid-template-areas: "titulo-nos" "foto1" "texto1" "texto2" "texto3" "foto3";
-    grid-template-columns: 85%;
-    grid-template-rows: 20px 140px 220px 110px 130px 310px;
-    margin: 15px;
+    display: flex;
+    flex-direction: column;
   }
   .nosotros-container .titulo-nos {
     font-size: 2rem;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     text-align: center;
   }
   .nosotros-container .foto1 img {
     width: 100%;
-    margin-bottom: 20px;
-    margin-top: 20px;
   }
   .nosotros-container .texto1 p {
     font-size: 1rem;
-    margin-bottom: 20px;
-    margin-top: 20px;
   }
   .nosotros-container .foto2 {
     display: none;
@@ -667,6 +695,7 @@ body {
     display: none;
   }
   .catalogo-completo {
+    padding-top: 0%;
     margin: 0px;
   }
   .catalogo-completo .catalogo-filtro {
@@ -678,9 +707,9 @@ body {
     top: 80px;
     z-index: 5;
     background: #EEF3F7;
-    background: linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
-    background: -webkit-linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
-    background: -moz-linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
+    background: linear-gradient(270deg, #EEF3F7 0%, rgba(255, 255, 255, 0.94) 90%);
+    background: -webkit-linear-gradient(270deg, #EEF3F7 0%, rgba(255, 255, 255, 0.94) 90%);
+    background: -moz-linear-gradient(270deg, #EEF3F7 0%, rgba(255, 255, 255, 0.94) 90%);
   }
   .catalogo-completo .catalogo-filtro .filtro {
     flex-direction: row;
@@ -691,8 +720,8 @@ body {
     top: 120px;
   }
   .catalogo-completo .catalogo-filtro .filtro .categoria {
-    font-size: 1rem;
-    font-weight: 200;
+    font-size: 1.2rem;
+    font-weight: 300;
     margin-top: 0px;
     margin: 0px;
     align-items: center;
@@ -724,17 +753,53 @@ body {
     align-items: center;
   }
   /*------------comunidad--------------*/
-  .rutas {
-    flex-direction: column;
+  .banner-comunidad {
+    height: 150px;
   }
-  .rutas .mapa iframe {
-    width: 300px;
+  .banner-comunidad h1 {
+    font-size: 2rem;
+    padding-top: 100px;
+  }
+  .titulo-comunidad h2 {
+    margin: 20px;
+    padding-bottom: 10px;
+  }
+  .recomendaciones-comunidad .reco-1 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .recomendaciones-comunidad .reco-1 a h5 {
+    font-size: 1rem;
+    margin: 0px;
+  }
+  .musica h2 {
+    font-size: 2rem;
+    padding-bottom: 0px;
+  }
+  .musica p {
+    color: white;
+    margin-bottom: 20px;
+  }
+  .rutas {
+    align-items: start;
+    flex-direction: column-reverse;
+  }
+  .rutas .mapa {
+    align-items: start;
+    margin: 0px;
+    width: 25%;
   }
   .rutas .texto-mapa {
-    margin: 50px;
+    margin: 30px;
+    font-size: 2rem;
   }
   .rutas .texto-mapa h2 {
     margin-bottom: 30px;
+  }
+  .titulo-comunidad-insta {
+    font-size: 2rem;
+    margin: 30px;
+    margin-right: 50px;
   }
   .compartido-instagram {
     display: flex;
@@ -743,6 +808,27 @@ body {
   /*--------------------contacto----------*/
   .formulario {
     width: 250px;
+  }
+  /*------------contactanos----------*/
+  .titulo-contacto {
+    font-size: 3rem;
+    margin: 20px;
+    text-align: center;
+  }
+  .formulario {
+    width: 75%;
+    align-items: center;
+    margin: 30px;
+  }
+  .encontranos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .encontranos .mapa-locales iframe {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    width: 80%;
+    margin: 30px;
   }
 }
 @media only screen and (min-width: 499px) and (max-width: 990px) {
@@ -758,19 +844,20 @@ body {
   }
   /*------------------------------------- catalogo mujer------*/
   .banner-catalogo {
-    height: 150px;
+    height: 200px;
     margin: 0px;
   }
   .banner-catalogo .titulo-h1-catalogo {
-    padding-top: 100px;
+    padding-top: 120px;
   }
   .banner-catalogo .titulo-h1-catalogo h1 {
-    font-size: 2rem;
+    font-size: 3.5rem;
   }
   .titulo-catalogo {
     display: none;
   }
   .catalogo-completo {
+    padding-top: 0px;
     margin: 0px;
   }
   .catalogo-completo .catalogo-filtro {
@@ -795,8 +882,8 @@ body {
     top: 120px;
   }
   .catalogo-completo .catalogo-filtro .filtro .categoria {
-    font-size: 1rem;
-    font-weight: 200;
+    font-size: 1.5rem;
+    font-weight: 400;
     margin-top: 0px;
     margin: 0px;
     align-items: center;
@@ -825,6 +912,80 @@ body {
   }
   .catalogo-completo .catalogo-fondo .espacio-card {
     align-items: center;
+  }
+  /*-----------nosotros-----*/
+  .banner-nosotros {
+    height: 200px;
+    margin: 0px;
+  }
+  .banner-nosotros .titulo-h1-nosotros {
+    padding-top: 10px;
+  }
+  .banner-nosotros .titulo-h1-nosotros h1 {
+    font-size: 3.5rem;
+    padding-top: 120px;
+  }
+  .nosotros-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .nosotros-container .titulo-nos {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .nosotros-container .foto1 {
+    align-items: center;
+  }
+  .nosotros-container .foto1 img {
+    width: 80%;
+  }
+  .nosotros-container .texto1 p {
+    font-size: 1.5rem;
+  }
+  .nosotros-container .foto2 {
+    display: none;
+  }
+  .nosotros-container .texto2 p {
+    font-size: 1.5rem;
+  }
+  .nosotros-container .texto3 p {
+    font-size: 1.5rem;
+  }
+  /*-------comunidad-------------*/
+  .banner-comunidad {
+    height: 200px;
+  }
+  .banner-comunidad h1 {
+    padding-top: 120px;
+    font-size: 3.5rem;
+  }
+  .titulo-comunidad h2 {
+    font-size: 2.5rem;
+    margin: 50px;
+  }
+  .recomendaciones-comunidad .reco-1 a h5 {
+    font-size: 1.5rem;
+    font-weight: 200px;
+  }
+  .musica-comunidad h2 {
+    font-size: 2.5rem;
+  }
+  .rutas {
+    flex-direction: column-reverse;
+  }
+  .rutas .mapa-c {
+    width: 50%;
+    margin: 50px;
+  }
+  .compartido-instagram {
+    display: flex;
+    flex-direction: column;
+  }
+  .compartido-instagram .insta1 {
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 20px;
   }
 }
 @media only screen and (min-width: 991px) {
