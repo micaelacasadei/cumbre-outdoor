@@ -98,7 +98,6 @@
 
     .carrousel-index-1 {
 
-        //height: 450px;
         img {
             height: 80%;
         }
@@ -125,7 +124,6 @@
 
     .acceso-catalogo-inicio {
         flex-direction: column;
-        //align-content: space-around;
         justify-content: center;
         align-items: center;
         margin: 20px;
@@ -134,7 +132,6 @@
             width: 80%;
             margin: 20px;
 
-            //justify-content: center;
             align-items: center;
 
             h5 {
@@ -245,8 +242,7 @@
 
             }
 
-            //padding: 0px;
-            //background-color: $cumbre-beige;
+            
         }
 
 
@@ -262,7 +258,6 @@
         .titulo-nos {
             font-size: 2rem;
             margin-top: 20px;
-            //margin-bottom: 20px;
             text-align: center;
         }
 
@@ -270,8 +265,7 @@
 
             img {
                 width: 100%;
-                // margin-bottom: 20px;
-                //margin-top: 20px;
+                
             }
 
         }
@@ -279,9 +273,7 @@
         .texto1 {
             p {
                 font-size: 1rem;
-                //margin-bottom: 20px;
-
-                //margin-top: 20px;
+              
             }
 
         }
@@ -319,8 +311,7 @@
 
             }
 
-            //padding: 0px;
-            //background-color: $cumbre-beige;
+            
         }
 
     }
@@ -486,15 +477,21 @@
 
         
 
-        .mapa {
+        .mapa-c {
 
             
-            align-items: start;
-
-            margin: 0px;
-            width: 25%;
+             iframe{
+               
+                    margin-left: 0px;
+               margin-bottom: 0px;
+               width: 80%;
+               margin: 30px;
+               
+            }
 
         }
+
+        
 
         .texto-mapa {
             margin: 30px;
@@ -599,7 +596,6 @@
         .titulo-h1-catalogo {
             padding-top: 120px;
 
-            //height: 150px;
 
             h1 {
                 font-size: 3.5rem;
@@ -607,8 +603,6 @@
 
             }
 
-            //padding: 0px;
-            //background-color: $cumbre-beige;
         }
 
     }
@@ -632,16 +626,10 @@
             padding: 0px;
             margin: 0px;
             background-color: white;
-            //  border-top: 1px solid #bdbaba;
-            // border-bottom: 1px solid #bdbaba;
+           
             position: sticky;
             top: 80px;
             z-index: 5;
-
-            // background: rgba(245,245,220,0.87);
-            // background: linear-gradient(90deg,rgba(245,245,220,0.87) 50%, rgba(245,245,220,0.87) 50%);
-            // background: -webkit-linear-gradient(90deg,rgba(245,245,220,0.87) 50%, rgba(245,245,220,0.87) 50%);
-            // background: -moz-linear-gradient(90deg,rgba(245,245,220,0.87) 50%, rgba(245,245,220,0.87) 50%);
 
             background: $cumbre-beige;
             background: linear-gradient(270deg, #f5f5dc 0%, rgba(255, 255, 255, 0.94) 90%);
@@ -673,7 +661,6 @@
 
             a {
                 background-color: white;
-                //align-items: center; 
 
             }
 
@@ -701,7 +688,6 @@
 
             .articulo {
                 width: 85%;
-                //margin: 0px 0px 0px 10px;
                 padding: 0px;
             }
 
@@ -725,7 +711,6 @@
         .titulo-h1-nosotros {
             padding-top: 10px;
 
-            //height: 150px;
 
             h1 {
                 font-size: 3.5rem;
@@ -734,8 +719,6 @@
 
             }
 
-            //padding: 0px;
-            //background-color: $cumbre-beige;
         }
 
 
@@ -751,7 +734,6 @@
         .titulo-nos {
             font-size: 2.5rem;
             margin-top: 20px;
-            //margin-bottom: 20px;
             text-align: center;
         }
 
@@ -761,8 +743,7 @@
             img {
                 width: 80%;
 
-                // margin-bottom: 20px;
-                //margin-top: 20px;
+                
             }
 
         }
@@ -770,9 +751,7 @@
         .texto1 {
             p {
                 font-size: 1.5rem;
-                //margin-bottom: 20px;
-
-                //margin-top: 20px;
+               
             }
 
         }
@@ -875,7 +854,7 @@
     }
 
 
-    /*-----catalogo mujer------*/
+    
 
 
 }

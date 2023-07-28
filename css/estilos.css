@@ -489,9 +489,9 @@ body {
 .rutas {
   display: flex;
 }
-.rutas .mapa-c {
-  width: 50%;
-  margin: 50px;
+.rutas .mapa-c iframe {
+  margin-left: 250px;
+  margin-bottom: 50px;
 }
 .rutas .texto-mapa {
   margin: 40px;
@@ -832,10 +832,11 @@ body {
     align-items: start;
     flex-direction: column-reverse;
   }
-  .rutas .mapa {
-    align-items: start;
-    margin: 0px;
-    width: 25%;
+  .rutas .mapa-c iframe {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    width: 80%;
+    margin: 30px;
   }
   .rutas .texto-mapa {
     margin: 30px;
@@ -1040,7 +1041,6 @@ body {
   header .barra-navegacion {
     height: 100px;
   }
-  /*-----catalogo mujer------*/
 }
 /*--------------------html general------------------------------*/
 * {
