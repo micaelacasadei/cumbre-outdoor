@@ -71,10 +71,34 @@
 
                     font-size: 1.8rem;
                     padding: 10px;
+
+                    
                 }
+
+                
             }
         }
 
+    }
+
+    .opcion-nav:active{
+        background:none;
+        font-weight: 500;
+    }
+
+    .opcion-nav:hover{
+        background:none;
+        font-weight: 400;
+    }
+
+    .item-desplegable:active{
+        background: $cumbre-bordo-transparente;
+        color: black;
+    }
+
+    .item-desplegable:hover{
+        background: $cumbre-bordo-transparente;
+        color: black;
     }
 
     .fuente-desplegable {

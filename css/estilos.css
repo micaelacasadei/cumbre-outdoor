@@ -40,6 +40,22 @@ header .navbar-expand-lg .navbar-collapse .desplegable .item-desplegable {
   font-size: 1.8rem;
   padding: 10px;
 }
+header .opcion-nav:active {
+  background: none;
+  font-weight: 500;
+}
+header .opcion-nav:hover {
+  background: none;
+  font-weight: 400;
+}
+header .item-desplegable:active {
+  background: rgba(204, 30, 30, 0.356);
+  color: black;
+}
+header .item-desplegable:hover {
+  background: rgba(204, 30, 30, 0.356);
+  color: black;
+}
 header .fuente-desplegable {
   font-size: 2rem;
 }
@@ -141,8 +157,12 @@ body {
 }
 .acceso-catalogo-inicio .acceso-tipo .boton-catalogo-inicio {
   font-size: 1.5rem;
-  padding: 5px;
+  padding: 8px;
   margin-top: 10px;
+  background-color: black;
+  border-color: black;
+}
+.acceso-catalogo-inicio .acceso-tipo .boton-catalogo-inicio:hover {
   background-color: rgb(204, 30, 30);
   border-color: rgb(204, 30, 30);
 }
@@ -169,6 +189,10 @@ body {
   font-size: 1.5rem;
   text-decoration: none;
   color: #141414;
+  font-weight: 400;
+}
+.destacados .filaDestacados a:hover {
+  font-weight: 600;
 }
 
 /*--------------musica*/
@@ -184,6 +208,10 @@ body {
   padding-bottom: 15px;
   margin-bottom: 20px;
 }
+.musica p {
+  color: white;
+  margin-bottom: 20px;
+}
 
 /*--------Recomendaciones-----------*/
 .recomendaciones-titulo {
@@ -194,9 +222,6 @@ body {
 .recomendaciones-index .recomendaciones-flex {
   justify-content: space-around;
   padding-bottom: 20px;
-}
-.recomendaciones-index .texto-recomendaciones-index {
-  margin: 0px;
 }
 .recomendaciones-index .recomendacion-1 {
   grid-area: recomendacion-1;
@@ -212,12 +237,16 @@ body {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.recomendaciones-index .recomendacion-1 a {
+.recomendaciones-index .recomendacion-1 .texto-recomendaciones-index {
+  margin: 0px;
+}
+.recomendaciones-index .recomendacion-1 .texto-recomendaciones-index a {
   font-size: 1.8rem;
+  font-weight: 500;
   text-decoration: none;
   color: #000000;
 }
-.recomendaciones-index .recomendacion-1 a :hover {
+.recomendaciones-index .recomendacion-1 .texto-recomendaciones-index a:hover {
   color: rgb(204, 30, 30);
 }
 
@@ -350,10 +379,17 @@ body {
   color: #141414;
   text-decoration: none;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 400;
   background-color: #EEF3F7;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+.catalogo-completo .catalogo-filtro .filtro .categoria:hover {
+  font-weight: 600;
+}
+.catalogo-completo .catalogo-filtro .filtro .categoria:active {
+  font-weight: 700;
+  color: rgb(204, 30, 30);
 }
 .catalogo-completo .catalogo-fondo {
   background-color: white;
@@ -425,6 +461,10 @@ body {
 .recomendaciones-comunidad .reco-1 a h5 {
   font-size: 1.8rem;
   margin: 10px;
+  font-weight: 400;
+}
+.recomendaciones-comunidad .reco-1 a h5:hover {
+  font-weight: 500;
 }
 
 /*musica*/
@@ -512,12 +552,20 @@ body {
 .formulario .form-control {
   font-size: 1.8rem;
 }
+.formulario .form-control:focus {
+  border-color: rgb(204, 30, 30);
+  border-width: 2px;
+}
 .formulario .form-label {
   font-size: 1.8rem;
 }
+.formulario .form-label:focus {
+  border-color: rgb(204, 30, 30);
+  border-width: 2px;
+}
 .formulario .btn-primary {
-  background-color: rgb(69, 167, 30);
-  border-color: rgb(69, 167, 30);
+  background-color: rgb(204, 30, 30);
+  border-color: rgb(204, 30, 30);
 }
 
 .encontranos {
@@ -542,7 +590,7 @@ body {
     border: 1px solid;
   }
   header .barra-navegacion .logo-nav {
-    width: 50%;
+    width: 60%;
   }
   header .barra-navegacion img {
     width: 60%;

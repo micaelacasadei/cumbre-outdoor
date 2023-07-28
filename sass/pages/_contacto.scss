@@ -21,18 +21,27 @@ text-align: left;
 
         font-size: 1.8rem;
     }
+    .form-control:focus{
+        border-color: $cumbre-bordo;
+        border-width: 2px;
+    }
 
     .form-label{
         font-size: 1.8rem;
     }
+    .form-label:focus{
+        border-color: $cumbre-bordo;
+        border-width: 2px;
+    }
 
     .btn-primary{
-        background-color: rgb(69, 167, 30);
-        border-color: rgb(69, 167, 30);
+        background-color: $cumbre-bordo;
+        border-color: $cumbre-bordo;
     }
 
     
 }
+
  
 .encontranos {
 

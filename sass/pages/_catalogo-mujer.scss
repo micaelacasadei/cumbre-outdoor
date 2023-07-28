@@ -68,13 +68,20 @@ padding-top: 20px ;
                 color: #141414;
                 text-decoration: none;
                 font-size: 1.5rem;
-                font-weight: 600;
+                font-weight: 400;
                 background-color: $cumbre-beige;
                 margin-top: 15px;
                 margin-bottom: 15px;
 
 
 
+            }
+            .categoria:hover{
+                font-weight: 600;
+            }
+            .categoria:active{
+                font-weight: 700;
+                color:$cumbre-bordo;
             }
 
         }
