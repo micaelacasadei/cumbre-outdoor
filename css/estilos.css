@@ -861,12 +861,14 @@ body {
   .titulo-contacto {
     font-size: 3rem;
     margin: 20px;
+    margin-bottom: 10px;
     text-align: center;
   }
   .formulario {
     width: 75%;
     align-items: center;
-    margin: 30px;
+    margin-top: 0px;
+    margin: 50px;
   }
   .encontranos {
     flex-direction: column;
@@ -877,6 +879,10 @@ body {
     margin-bottom: 0px;
     width: 80%;
     margin: 30px;
+  }
+  .encontranos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
   }
 }
 @media only screen and (min-width: 499px) and (max-width: 990px) {
