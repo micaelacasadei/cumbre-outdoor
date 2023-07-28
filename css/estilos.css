@@ -489,9 +489,9 @@ body {
 .rutas {
   display: flex;
 }
-.rutas .mapa-c iframe {
-  margin-left: 250px;
-  margin-bottom: 50px;
+.rutas .mapa-c {
+  width: 50%;
+  margin: 50px;
 }
 .rutas .texto-mapa {
   margin: 40px;
@@ -835,8 +835,7 @@ body {
   .rutas .mapa-c iframe {
     margin-left: 0px;
     margin-bottom: 0px;
-    width: 80%;
-    margin: 30px;
+    width: 150%;
   }
   .rutas .texto-mapa {
     margin: 30px;
